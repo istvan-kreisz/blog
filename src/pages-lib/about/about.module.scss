@@ -33,7 +33,7 @@
 
 	.titlebar {
 		text-align: center;
-		margin-bottom: 10rem;
+		margin-bottom: 3rem;
 
 		h1 {
 			font-weight: 300;
@@ -56,7 +56,7 @@
 
 		@include min-width() {
 			text-align: left;
-			margin-bottom: 15rem;
+			margin-bottom: 5rem;
 		}
 	}
 

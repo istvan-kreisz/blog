@@ -1,0 +1,86 @@
+@import '../../shared/shared.scss';
+
+.projectCard {
+	@include default-shadow;
+	border-radius: 16px;
+	border: 1px solid $color-gray-light;
+	overflow: hidden;
+
+	&:hover {
+		animation: scaleUp 0.35s ease-out forwards;
+	}
+
+	a {
+		$orientation-change-width: 550px;
+		display: flex;
+		flex-direction: column;
+
+		@include min-width($orientation-change-width) {
+			flex-direction: row;
+		}
+
+		img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+
+			@include min-width($orientation-change-width) {
+				height: initial;
+				width: 45%;
+			}
+
+			&.rightAligned {
+				order: 1;
+			}
+		}
+
+		.projectContent {
+			padding: 1.5rem;
+
+			h3 {
+				font-weight: 400;
+				margin: 1rem 0;
+			}
+
+			p {
+				color: $color-gray;
+				margin-top: 0;
+			}
+
+			.date {
+				margin-top: 1.8rem;
+				margin-bottom: 0;
+				font-weight: 600;
+			}
+
+			.techList {
+				padding-left: 0;
+				display: flex;
+
+				li {
+					$height: 32px;
+					margin-right: 1rem;
+					background-color: rgba($color: $color-success, $alpha: 0.1);
+					color: $color-success;
+					height: $height;
+					line-height: $height;
+					padding-left: 0.6rem;
+					padding-right: 0.6rem;
+					border-radius: $height / 2;
+					font-size: 0.8rem;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+@keyframes scaleUp {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.02);
+	}
+}

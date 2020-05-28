@@ -3,4 +3,8 @@
 .content {
 	margin: $padding-horizontal auto;
 	max-width: $max-width-desktop;
+
+	@include min-width() {
+		margin: $padding-horizontal auto;
+	}
 }
