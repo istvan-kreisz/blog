@@ -1,4 +1,4 @@
-import Layout from '../components/Layout.jsx'
+import Layout from '../components/Layout/Layout.jsx'
 import PostList from '../components/PostList'
 import matter from 'gray-matter'
 

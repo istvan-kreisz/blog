@@ -7,9 +7,9 @@ const About = ({ title, description, ...props }) => {
 	return (
 		<>
 			<Layout pageTitle={`${title} | About`} description={description}>
-				<section className={classes.container}>
+				<div className={classes.container}>
 					<div className={classes.backdrop}></div>
-					<div className={classes.main}>
+					<section className={classes.main}>
 						<div className={classes.titlebar}>
 							<h1 className="title">Hi, I'm Istvan!</h1>
 							<h4>iOS and Web Developer</h4>
@@ -40,8 +40,8 @@ const About = ({ title, description, ...props }) => {
 							tutorial, and a not-exciting person wouldn't do
 							that.
 						</p>
-					</div>
-					<div className={classes.sidebar}>
+					</section>
+					<section className={classes.sidebar}>
 						<div className={classes.mediaLinks}>
 							<h4>Follow me:</h4>
 							<a href={globals.github}>
@@ -82,8 +82,8 @@ const About = ({ title, description, ...props }) => {
 								<p>hello@istvan-kreisz.com</p>
 							</a>
 						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</Layout>
 		</>
 	)
