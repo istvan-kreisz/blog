@@ -1,0 +1,103 @@
+@import '../../shared/shared.scss';
+
+.container {
+	display: grid;
+	grid-template-columns: auto 200px;
+	grid-template-rows: auto;
+
+	grid-template-areas: 'main main';
+	column-gap: 2rem;
+
+	@include min-width() {
+		grid-template-areas: 'main side';
+	}
+}
+
+.main {
+	grid-area: main;
+
+	.titlebar {
+		text-align: center;
+		margin-bottom: 8rem;
+
+		h1 {
+			font-weight: 300;
+			font-size: 3.5rem;
+			margin-bottom: 1rem;
+			margin-top: 2rem;
+		}
+
+		h4 {
+			font-size: 1.2rem;
+			font-weight: 600;
+			margin-top: 1rem;
+		}
+
+		@include min-width() {
+			text-align: left;
+			margin-bottom: 15rem;
+		}
+	}
+
+	h2 {
+		font-size: 2.2rem;
+		font-weight: 300;
+	}
+
+	p {
+		color: $color-gray;
+	}
+}
+
+.sidebar {
+	grid-area: side;
+	display: none;
+
+	@include min-width() {
+		display: block;
+	}
+
+	h4 {
+		font-size: 1rem;
+		margin: 1rem 0;
+	}
+
+	h5 {
+		margin: 0.5rem 0;
+	}
+
+	p {
+		font-size: 0.9rem;
+		color: $color-gray;
+		margin: 0.5rem 0;
+	}
+
+	.sidebarItem {
+		width: 100%;
+		border-radius: $corner-radius;
+		background-color: $color-white;
+		margin-bottom: 1.5rem;
+		box-shadow: 0 10px 35px 0 rgba($color: #000000, $alpha: 0.1);
+		padding: 1.3rem 1rem;
+	}
+
+	.mediaLinks {
+		@extend .sidebarItem;
+
+		h4 {
+			margin-top: 0;
+		}
+
+		a {
+			margin-right: 0.6rem;
+		}
+	}
+
+	.personalDetails {
+		@extend .sidebarItem;
+
+		h4 {
+			margin-top: 0;
+		}
+	}
+}

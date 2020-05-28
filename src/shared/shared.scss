@@ -1,0 +1,7 @@
+@import './_variables.scss';
+
+@mixin min-width() {
+	@media (min-width: $desktop-width) {
+		@content;
+	}
+}

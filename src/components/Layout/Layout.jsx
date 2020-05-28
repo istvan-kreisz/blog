@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Header from './Header'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+import classes from './Layout.module.scss'
 
 export default function Layout({ children, pageTitle, ...props }) {
 	return (
@@ -11,11 +13,11 @@ export default function Layout({ children, pageTitle, ...props }) {
 				/>
 				<title>{pageTitle}</title>
 			</Head>
-			<section className="layout">
+			<div className={classes.content}>
 				<Header />
-				<div className="content">{children}</div>
-			</section>
-			<footer>Built by me!</footer>
+				{children}
+			</div>
+			<Footer></Footer>
 		</>
 	)
 }
