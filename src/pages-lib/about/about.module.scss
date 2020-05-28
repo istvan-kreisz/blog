@@ -94,11 +94,11 @@
 	}
 
 	.sidebarItem {
+		@include default-shadow;
 		width: 100%;
 		border-radius: $corner-radius;
 		background-color: $color-white;
 		margin-bottom: 1.5rem;
-		box-shadow: 0 10px 35px 0 rgba($color: #000000, $alpha: 0.1);
 		padding: 1.3rem 1rem;
 	}
 

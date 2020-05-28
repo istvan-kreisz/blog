@@ -24,15 +24,28 @@ const Portfolio = ({ projects, title, description, ...props }) => {
 					<div className={classes.sectionTitle}>
 						<h3>Web Development</h3>
 						<p>Here's all my Web projects, blah blah blah</p>
-						<div className={classes.projectList}>
-							<ul>
-								{projects &&
-									projects.map((project, index) => {
-										return (
-											<li key={index}>
-												<p>{project.title}</p>
-												<p>{project.description}</p>
-												{/* <Link
+					</div>
+					<ul className={classes.projectList}>
+						{projects &&
+							projects.map((project, index) => {
+								return (
+									<li
+										className={classes.projectCard}
+										key={index}
+									>
+										<img src="/images/sample.png" alt="" />
+										<div className={classes.projectContent}>
+											<ul className={classes.techList}>
+												<li>Hey</li>
+												<li>Hey</li>
+											</ul>
+											<h3>{project.title}</h3>
+											<p>{project.description}</p>
+											<p className={classes.date}>
+												{project.date}
+											</p>
+										</div>
+										{/* <Link
 													href={{
 														pathname: `/post/${post.slug}`,
 													}}
@@ -41,12 +54,10 @@ const Portfolio = ({ projects, title, description, ...props }) => {
 														{post.frontmatter.title}
 													</a>
 												</Link> */}
-											</li>
-										)
-									})}
-							</ul>
-						</div>
-					</div>
+									</li>
+								)
+							})}
+					</ul>
 				</section>
 			</Layout>
 		</>

@@ -30,15 +30,78 @@
 }
 
 .projects {
-	h3 {
-		font-weight: 300;
-		font-size: 2.2rem;
-		margin-bottom: 1.1rem;
-		margin-top: 0;
+	.sectionTitle {
+		margin-bottom: 2rem;
+		h3 {
+			font-weight: 300;
+			font-size: 2.2rem;
+			margin-bottom: 1.3rem;
+			margin-top: 0;
+		}
+
+		p {
+			color: $color-gray;
+			margin-top: 0;
+		}
 	}
 
-	p {
-		color: $color-gray;
-		margin-top: 0;
+	.projectList {
+		padding-left: 0;
+		li {
+			list-style: none;
+		}
+
+		.projectCard {
+			@include default-shadow;
+			border-radius: 16px;
+			border: 1px solid $color-gray-light;
+			display: flex;
+
+			img {
+				flex-basis: 100%;
+				width: 45%;
+			}
+
+			.projectContent {
+				padding: 1.5rem;
+
+				.techList {
+					padding-left: 0;
+					display: flex;
+
+					li {
+						$height: 32px;
+						margin-right: 1rem;
+						background-color: rgba(
+							$color: $color-success,
+							$alpha: 0.1
+						);
+						color: $color-success;
+						height: $height;
+						line-height: $height;
+						padding-left: 0.6rem;
+						padding-right: 0.6rem;
+						border-radius: $height / 2;
+						font-size: 0.8rem;
+						text-transform: uppercase;
+					}
+				}
+
+				h3 {
+					font-weight: 400;
+					margin: 1rem 0;
+				}
+
+				p {
+					color: $color-gray;
+					margin-top: 0;
+				}
+
+				.date {
+					margin-top: 1.8rem;
+					font-weight: 600;
+				}
+			}
+		}
 	}
 }
