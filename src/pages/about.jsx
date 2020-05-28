@@ -8,6 +8,7 @@ const About = ({ title, description, ...props }) => {
 		<>
 			<Layout pageTitle={`${title} | About`} description={description}>
 				<section className={classes.container}>
+					<div className={classes.backdrop}></div>
 					<div className={classes.main}>
 						<div className={classes.titlebar}>
 							<h1 className="title">Hi, I'm Istvan!</h1>
@@ -23,7 +24,21 @@ const About = ({ title, description, ...props }) => {
 						<p>
 							I am a very exciting person. I know this because I'm
 							following a very exciting tutorial, and a
-							not-exciting person wouldn't do that.
+							not-exciting person wouldn't do that. I am a very
+							exciting person. I know this because I'm following a
+							very exciting tutorial, and a not-exciting person
+							wouldn't do that. I am a very exciting person. I
+							know this because I'm following a very exciting
+							tutorial, and a not-exciting person wouldn't do
+							that. I am a very exciting person. I know this
+							because I'm following a very exciting tutorial, and
+							a not-exciting person wouldn't do that. I am a very
+							exciting person. I know this because I'm following a
+							very exciting tutorial, and a not-exciting person
+							wouldn't do that. I am a very exciting person. I
+							know this because I'm following a very exciting
+							tutorial, and a not-exciting person wouldn't do
+							that.
 						</p>
 					</div>
 					<div className={classes.sidebar}>
