@@ -6,16 +6,18 @@ import classes from './Layout.module.scss'
 export default function Layout({ children, pageTitle, ...props }) {
 	return (
 		<>
-			<Head>
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1"
-				/>
-				<title>{pageTitle}</title>
-			</Head>
-			<div className={classes.content}>
-				<Header />
-				{children}
+			<div className={classes.main}>
+				<Head>
+					<meta
+						name="viewport"
+						content="width=device-width, initial-scale=1"
+					/>
+					<title>{pageTitle}</title>
+				</Head>
+				<div className={classes.content}>
+					<Header />
+					{children}
+				</div>
 			</div>
 			<Footer></Footer>
 		</>

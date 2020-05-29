@@ -1,0 +1,58 @@
+@import '../../shared/shared.scss';
+
+.footer {
+	position: relative;
+	overflow: visible;
+	height: 130px;
+
+	.backdrop {
+		width: calc(100% + 200px);
+		height: 100%;
+		display: block;
+		position: absolute;
+		overflow: visible;
+		left: -100px;
+		background-color: $color-black;
+		z-index: -1;
+	}
+
+	.content {
+		.links {
+			padding-top: 2rem;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+
+			@include min-width() {
+				justify-content: space-between;
+			}
+
+			.title {
+				font-weight: 800;
+				font-style: italic;
+				font-size: 1.5rem;
+				flex-basis: 100%;
+				text-align: center;
+				color: $color-white;
+
+				@include min-width() {
+					flex-basis: initial;
+				}
+			}
+
+			.mediaLinks {
+				margin: 0 -1rem;
+				a {
+					margin: 0 1rem;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+.copyright {
+	color: white;
+	text-align: center;
+}

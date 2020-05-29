@@ -18,6 +18,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0 $padding-horizontal;
 	background-color: $color-white;
+	overflow: visible;
 
 	@include min-width() {
 		margin: 0 $padding-horizontal * 2;
