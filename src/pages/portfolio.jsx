@@ -20,6 +20,7 @@ const Portfolio = ({
 					title: project.title,
 					description: project.description,
 					date: project.date,
+					image: project.image,
 					link: project.link,
 				}
 				return ProjectCard(props)

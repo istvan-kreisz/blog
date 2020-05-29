@@ -2,19 +2,14 @@ import classes from './ArticleCard.module.scss'
 import Link from 'next/link'
 
 const ArticleCard = (props) => {
+	console.log(props)
 	return (
-		<li className={classes.projectCard} key={props.index}>
-			<Link href={props.link}>
+		<li className={classes.articleCard} key={props.index}>
+			<Link href="/posts/[id]" as={`/posts/${props.index}`}>
 				<a>
-					<img
-						className={
-							props.index % 2 == 0 ? null : classes.rightAligned
-						}
-						src="/images/sample.png"
-						alt=""
-					/>
-					<div className={classes.projectContent}>
-						<ul className={classes.techList}>
+					<img src="/images/sample.png" alt="" />
+					<div className={classes.articleContent}>
+						<ul className={classes.tags}>
 							{props.tags.forEach((element) => {
 								return <li>element</li>
 							})}

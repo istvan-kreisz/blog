@@ -67,7 +67,12 @@
 				width: 100%;
 				height: 56px;
 				padding-left: 1.5rem;
+				padding-right: 1.5rem;
 				font-size: 1.2rem;
+
+				@include min-width() {
+					padding-right: 8rem;
+				}
 
 				&:focus {
 					outline: none;
@@ -131,10 +136,20 @@
 }
 
 .articles {
-	.articleList {
+	.articlesList {
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 2rem;
+		row-gap: 4rem;
 		padding-left: 0;
-		li {
-			list-style: none;
+		justify-items: center;
+
+		@media (min-width: $desktop-width) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (min-width: 1200px) {
+			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 }

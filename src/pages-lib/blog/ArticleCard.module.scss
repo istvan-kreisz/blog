@@ -1,40 +1,36 @@
 @import '../../shared/shared.scss';
 
-.projectCard {
+.articleCard {
 	@include default-shadow;
 	border-radius: 16px;
-	border: 1px solid $color-gray-light;
+	width: 80%;
+	max-width: 100%;
+	list-style: none;
 	overflow: hidden;
+
+	@include min-width($desktop-width) {
+		width: 300px;
+	}
+
+	@include min-width(1200px) {
+		width: 330px;
+	}
 
 	&:hover {
 		animation: scaleUp 0.35s ease-out forwards;
 	}
 
 	a {
-		$orientation-change-width: 550px;
 		display: flex;
 		flex-direction: column;
 
-		@include min-width($orientation-change-width) {
-			flex-direction: row;
-		}
-
 		img {
 			width: 100%;
-			height: 200px;
+			height: 250px;
 			object-fit: cover;
-
-			@include min-width($orientation-change-width) {
-				height: initial;
-				width: 45%;
-			}
-
-			&.rightAligned {
-				order: 1;
-			}
 		}
 
-		.projectContent {
+		.articleContent {
 			padding: 1.5rem;
 
 			h3 {
@@ -53,7 +49,7 @@
 				font-weight: 600;
 			}
 
-			.techList {
+			.tags {
 				padding-left: 0;
 				display: flex;
 

@@ -12,15 +12,16 @@ const Index = ({ articles, title, description, ...props }) => {
 	const generateCards = (articles) => {
 		if (articles && articles.length > 0) {
 			return articles.map((article, index) => {
-				const props = {
+				const cardProps = {
 					index: index,
-					tags: article.tags,
-					title: article.title,
-					description: article.description,
-					date: article.date,
+					tags: article.frontmatter.tags,
+					title: article.frontmatter.title,
+					description: article.frontmatter.description,
+					date: article.frontmatter.date,
+					image: article.frontmatter.image,
 					clicked: clickedArticle.bind(null, index),
 				}
-				return ArticleCard(props)
+				return ArticleCard(cardProps)
 			})
 		} else {
 			return null
@@ -56,11 +57,9 @@ const Index = ({ articles, title, description, ...props }) => {
 					</div>
 				</section>
 				<section className={classes.articles}>
-					{/* {webProjectList ? (
-                    <ul className={classes.projectList}>
-                        {webProjectList}
-                    </ul>
-                ) : null} */}
+					{articlesList ? (
+						<ul className={classes.articlesList}>{articlesList}</ul>
+					) : null}
 				</section>
 			</Layout>
 		</>
@@ -72,7 +71,7 @@ export default Index
 export async function getStaticProps() {
 	const configData = await import(`../siteconfig.json`)
 
-	const posts = ((context) => {
+	const articles = ((context) => {
 		const keys = context.keys()
 		const values = keys.map(context)
 
@@ -91,7 +90,7 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-			posts,
+			articles: articles,
 			title: configData.default.title,
 			description: configData.default.description,
 		},
