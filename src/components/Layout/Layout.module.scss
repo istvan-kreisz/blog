@@ -1,9 +1,19 @@
 @import '../../shared/shared.scss';
 
-.main {
-	.content {
-		margin: $padding-horizontal auto;
-		max-width: $max-width-desktop;
-		min-height: 90vh;
+.mainContainer {
+	display: grid;
+	grid-template-rows: 1fr auto;
+	min-height: 100%;
+
+	.main {
+		.content {
+			margin: $padding-horizontal auto;
+			max-width: $max-width-desktop;
+		}
+	}
+
+	.footer {
+		grid-row-start: 2;
+		grid-row-end: 3;
 	}
 }

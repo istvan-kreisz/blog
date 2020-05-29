@@ -5,7 +5,7 @@ import classes from './Layout.module.scss'
 
 export default function Layout({ children, pageTitle, ...props }) {
 	return (
-		<>
+		<div className={classes.mainContainer}>
 			<div className={classes.main}>
 				<Head>
 					<meta
@@ -19,7 +19,9 @@ export default function Layout({ children, pageTitle, ...props }) {
 					{children}
 				</div>
 			</div>
-			<Footer></Footer>
-		</>
+			<div className={classes.footer}>
+				<Footer></Footer>
+			</div>
+		</div>
 	)
 }
