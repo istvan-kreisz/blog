@@ -5,10 +5,6 @@ import classes from '../pages-lib/blog/blog.module.scss'
 import matter from 'gray-matter'
 
 const Index = ({ articles, title, description, ...props }) => {
-	const clickedArticle = (index) => {
-		console.log(index)
-	}
-
 	const generateCards = (articles) => {
 		if (articles && articles.length > 0) {
 			return articles.map((article, index) => {
@@ -19,7 +15,7 @@ const Index = ({ articles, title, description, ...props }) => {
 					description: article.frontmatter.description,
 					date: article.frontmatter.date,
 					image: article.frontmatter.image,
-					clicked: clickedArticle.bind(null, index),
+					slug: article.slug,
 				}
 				return ArticleCard(cardProps)
 			})

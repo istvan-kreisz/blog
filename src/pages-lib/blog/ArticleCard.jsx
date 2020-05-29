@@ -5,7 +5,7 @@ const ArticleCard = (props) => {
 	console.log(props)
 	return (
 		<li className={classes.articleCard} key={props.index}>
-			<Link href="/posts/[id]" as={`/posts/${props.index}`}>
+			<Link href="/posts/[postname]" as={`/posts/${props.slug}`}>
 				<a>
 					<img src="/images/sample.png" alt="" />
 					<div className={classes.articleContent}>
