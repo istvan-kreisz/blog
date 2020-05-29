@@ -3,7 +3,7 @@
 .header {
 	.titlebar {
 		text-align: center;
-		margin-bottom: 10rem;
+		// margin-bottom: 5rem;
 
 		h1 {
 			font-weight: 600;
@@ -24,7 +24,7 @@
 		}
 
 		@include min-width() {
-			margin-bottom: 15rem;
+			margin-bottom: 5rem;
 		}
 	}
 }

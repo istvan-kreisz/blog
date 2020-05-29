@@ -17,7 +17,7 @@ export default function Header() {
 						<Link href="/portfolio">
 							<a>Portfolio</a>
 						</Link>
-						<Link href="/blog">
+						<Link href="/">
 							<a>Blog</a>
 						</Link>
 					</div>

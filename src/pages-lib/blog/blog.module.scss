@@ -1,0 +1,140 @@
+@import '../../shared/shared.scss';
+
+.header {
+	width: 100%;
+	margin-bottom: 10rem;
+	display: flex;
+	justify-content: center;
+
+	@include min-width() {
+		justify-content: space-between;
+		margin-bottom: 15rem;
+	}
+
+	.imageContainer {
+		flex-basis: 360px;
+		flex-shrink: 2;
+		display: none;
+		margin-left: 2rem;
+
+		@include min-width() {
+			display: block;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.intro {
+		flex-shrink: 5;
+		text-align: center;
+
+		@include min-width() {
+			text-align: left;
+		}
+
+		h1 {
+			font-weight: 600;
+			font-size: 2.5rem;
+			margin-bottom: 2rem;
+			margin-top: 0;
+
+			@include min-width() {
+				font-size: 3.5rem;
+			}
+		}
+
+		h4 {
+			font-size: 1.1rem;
+			font-weight: 400;
+			margin-top: 1rem;
+		}
+
+		.searchBar {
+			margin-top: 3rem;
+			width: 100%;
+			position: relative;
+
+			@include min-width() {
+				width: 93%;
+			}
+
+			input[type='text'] {
+				box-shadow: 0 15px 25px 0 rgba($color: #000000, $alpha: 0.08);
+				border-radius: 8px;
+				border: none;
+				width: 100%;
+				height: 56px;
+				padding-left: 1.5rem;
+				font-size: 1.2rem;
+
+				&:focus {
+					outline: none;
+				}
+
+				&::placeholder {
+					color: $color-gray-light;
+				}
+			}
+
+			button {
+				margin: 1rem auto;
+				height: 40px;
+				width: 94px;
+				outline: none;
+				border: none;
+				background-color: $color-primary;
+				border-radius: 8px;
+				color: $color-white;
+				font-size: 1rem;
+
+				@include min-width() {
+					position: absolute;
+					margin-top: 0;
+					top: 8px;
+					right: 10px;
+				}
+			}
+		}
+
+		.searchByTags {
+			margin-top: 0.9rem;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+
+			@include min-width() {
+				justify-content: left;
+			}
+
+			& > * {
+				margin-right: 0.8rem;
+			}
+			button {
+				height: 32px;
+				outline: none;
+				border: none;
+				background-color: rgba($color-primary, 0.15);
+				color: $color-primary;
+				border-radius: 4px;
+				font-size: 1rem;
+
+				&.active {
+					background-color: $color-primary;
+					color: $color-white;
+				}
+			}
+		}
+	}
+}
+
+.articles {
+	.articleList {
+		padding-left: 0;
+		li {
+			list-style: none;
+		}
+	}
+}

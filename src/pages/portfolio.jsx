@@ -4,9 +4,6 @@ import ProjectCard from '../pages-lib/portfolio/ProjectCard'
 import classes from '../pages-lib/portfolio/portfolio.module.scss'
 import matter from 'gray-matter'
 
-// import { globals } from '../shared/global'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 const Portfolio = ({
 	webProjects,
 	iosProjects,
