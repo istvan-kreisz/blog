@@ -5,5 +5,5 @@ description: 'Humblebrag sartorial man braid ad vice, wolf ramps in cronut tousl
 image: 'sample.png'
 tags: [yo1, yo2]
 date: 'March 2020'
-link: '/'
+link: 'https://google.com'
 ---

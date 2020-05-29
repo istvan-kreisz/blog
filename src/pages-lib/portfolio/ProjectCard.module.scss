@@ -2,9 +2,11 @@
 
 .projectCard {
 	@include default-shadow;
+	$width: 320px;
 	border-radius: 16px;
 	border: 1px solid $color-gray-light;
 	overflow: hidden;
+	height: $width;
 
 	&:hover {
 		animation: scaleUp 0.35s ease-out forwards;
@@ -25,7 +27,7 @@
 			object-fit: cover;
 
 			@include min-width($orientation-change-width) {
-				height: initial;
+				height: $width;
 				width: 45%;
 			}
 
@@ -67,7 +69,7 @@
 					padding-left: 0.6rem;
 					padding-right: 0.6rem;
 					border-radius: $height / 2;
-					font-size: 0.8rem;
+					font-size: 0.75rem;
 					text-transform: uppercase;
 				}
 			}
