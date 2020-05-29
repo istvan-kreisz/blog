@@ -1,24 +1,34 @@
 @import '../../shared/shared.scss';
 
 .footer {
-	position: relative;
-	overflow: visible;
-	height: 130px;
+	margin-top: 6rem;
+	width: 100vw;
+	display: block;
+	position: absolute;
+	left: 0;
+	background-color: $color-black;
+	padding: 0 $padding-horizontal;
 
-	.backdrop {
-		width: calc(100% + 200px);
-		height: 100%;
-		display: block;
-		position: absolute;
-		overflow: visible;
-		left: -100px;
-		background-color: $color-black;
-		z-index: -1;
+	@include min-width() {
+		padding: 0 $padding-horizontal * 2;
 	}
 
 	.content {
+		padding: 2rem 0;
+
+		.copyright {
+			color: white;
+			text-align: center;
+			margin-bottom: 0;
+			margin-top: 1.6rem;
+			font-size: 0.9rem;
+
+			@include min-width() {
+				margin-top: 3rem;
+			}
+		}
+
 		.links {
-			padding-top: 2rem;
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
@@ -42,7 +52,12 @@
 			}
 
 			.mediaLinks {
-				margin: 0 -1rem;
+				margin: 1.3rem 0;
+
+				@include min-width() {
+					margin: 0 -1rem;
+				}
+
 				a {
 					margin: 0 1rem;
 					color: white;
@@ -50,9 +65,4 @@
 			}
 		}
 	}
-}
-
-.copyright {
-	color: white;
-	text-align: center;
 }

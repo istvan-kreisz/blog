@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Footer() {
 	return (
 		<footer className={classes.footer}>
-			<div className={classes.backdrop}></div>
 			<div className={classes.content}>
 				<div className={classes.links}>
 					<Link href="/">
@@ -39,8 +38,10 @@ export default function Footer() {
 						</a>
 					</div>
 				</div>
+				<p className={classes.copyright}>
+					Copyright © 2020. Istvan Kreisz
+				</p>
 			</div>
-			<p className={classes.copyright}>Copyright © 2020. Istvan Kreisz</p>
 		</footer>
 	)
 }
