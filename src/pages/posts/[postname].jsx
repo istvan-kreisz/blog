@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import Backdrop from '../../components/Backdrop/Backdrop'
+import classes from '../../pages-lib/posts/post.module.scss'
 
 import Layout from '../../components/Layout/Layout'
 
@@ -8,32 +10,26 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 	if (!frontmatter) return <></>
 
 	return (
-		<Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-			<Link href="/">
-				<a>Back to post list</a>
-			</Link>
-			<article>
-				<h1>{frontmatter.title}</h1>
-				<p>By {frontmatter.author}</p>
-				<div>
+		<>
+			<Backdrop {...{ image: frontmatter.image }} />
+			<Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+				<h1 className={classes.title}>{frontmatter.title}</h1>
+				<article className={classes.article}>
+					{/* <div> */}
 					<ReactMarkdown source={markdownBody} />
-				</div>
-			</article>
-		</Layout>
+					{/* </div> */}
+				</article>
+			</Layout>
+		</>
 	)
 }
 
 export async function getStaticProps({ params }) {
 	const { postname } = params
-	console.log('content')
-	// console.log(ctx)
-	console.log(params)
-	console.log(postname)
 
 	const content = await import(`../../posts/${postname}.md`)
 	const config = await import(`../../siteconfig.json`)
 	const data = matter(content.default)
-	console.log(content)
 
 	return {
 		props: {
@@ -56,7 +52,6 @@ export async function getStaticPaths() {
 	})(require.context('../../posts', true, /\.md$/))
 
 	const paths = blogSlugs.map((slug) => `/posts/${slug}`)
-	console.log(paths)
 
 	return {
 		paths,

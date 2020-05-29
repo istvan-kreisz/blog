@@ -1,6 +1,6 @@
 import Layout from '../components/Layout/Layout.jsx'
 import ArticleCard from '../pages-lib/blog/ArticleCard'
-import Backdrop from '../components/Backdrop/Backdrop'
+import Backdrop from '../components/BackdropCircular/BackdropCircular'
 import classes from '../pages-lib/blog/blog.module.scss'
 import matter from 'gray-matter'
 

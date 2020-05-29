@@ -3,7 +3,7 @@
 .mainContainer {
 	display: grid;
 	grid-template-rows: 1fr auto;
-	min-height: 100%;
+	min-height: 100vh;
 
 	.main {
 		.content {

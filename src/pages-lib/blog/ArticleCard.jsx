@@ -2,7 +2,6 @@ import classes from './ArticleCard.module.scss'
 import Link from 'next/link'
 
 const ArticleCard = (props) => {
-	console.log(props)
 	return (
 		<li className={classes.articleCard} key={props.index}>
 			<Link href="/posts/[postname]" as={`/posts/${props.slug}`}>

@@ -1,5 +1,5 @@
 import Layout from '../components/Layout/Layout'
-import Backdrop from '../components/Backdrop/Backdrop'
+import Backdrop from '../components/BackdropCircular/BackdropCircular'
 import ProjectCard from '../pages-lib/portfolio/ProjectCard'
 import classes from '../pages-lib/portfolio/portfolio.module.scss'
 import matter from 'gray-matter'

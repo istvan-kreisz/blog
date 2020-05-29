@@ -30,6 +30,7 @@
 	margin-bottom: $padding-vertical-sm;
 
 	& > * {
+		font-size: 1.2rem;
 		&:active,
 		&:focus {
 			color: $color-primary;

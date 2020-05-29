@@ -1,0 +1,27 @@
+@import '../../shared/shared.scss';
+
+.outerRing {
+	position: absolute;
+	$outerDiameter: 750px;
+	$innerDiameter: 500px;
+
+	left: -$outerDiameter / 2;
+	top: 100px;
+	width: $outerDiameter;
+	height: $outerDiameter;
+	border-radius: $outerDiameter / 2;
+
+	background: linear-gradient(rgba($color-info, 0.07), $color-white);
+
+	z-index: -1;
+
+	.innerRing {
+		position: absolute;
+		background-color: $color-white;
+		top: ($outerDiameter - $innerDiameter) / 2;
+		left: ($outerDiameter - $innerDiameter) / 2;
+		width: $innerDiameter;
+		height: $innerDiameter;
+		border-radius: $innerDiameter / 2;
+	}
+}
