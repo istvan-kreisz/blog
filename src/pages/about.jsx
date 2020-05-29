@@ -6,9 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const About = ({ title, description, ...props }) => {
 	return (
 		<>
+			<div className={classes.backdropContainer}>
+				<div className={classes.backdrop}></div>
+			</div>
 			<Layout pageTitle={`${title} | About`} description={description}>
 				<div className={classes.container}>
-					<div className={classes.backdrop}></div>
 					<section className={classes.main}>
 						<div className={classes.titlebar}>
 							<h1 className="title">Hi, I'm Istvan!</h1>
