@@ -3,28 +3,72 @@ import ArticleCard from '../pages-lib/blog/ArticleCard'
 import Backdrop from '../components/BackdropCircular/BackdropCircular'
 import classes from '../pages-lib/blog/blog.module.scss'
 import matter from 'gray-matter'
+import { useState } from 'react'
 
 const Index = ({ articles, title, description, ...props }) => {
-	const generateCards = (articles) => {
+	const [searchTerm, setSearchTerm] = useState('')
+	const [filters, setFilters] = useState([])
+
+	const articleTags = ['web', 'ios', 'productivity']
+
+	const generateCards = (articles, searchTerm, filters) => {
 		if (articles && articles.length > 0) {
-			return articles.map((article, index) => {
-				const cardProps = {
-					index: index,
-					tags: article.frontmatter.tags,
-					title: article.frontmatter.title,
-					description: article.frontmatter.description,
-					date: article.frontmatter.date,
-					image: article.frontmatter.image,
-					slug: article.slug,
-				}
-				return ArticleCard(cardProps)
-			})
+			return articles
+				.filter((article) => {
+					const matchesTitle =
+						article &&
+						article.frontmatter &&
+						article.frontmatter.title &&
+						article.frontmatter.title
+							.toLowerCase()
+							.search(searchTerm) !== -1
+					let matchesFilters = true
+					if (filters.length > 0) {
+						matchesFilters =
+							article &&
+							article.tags &&
+							filters.reduce((previous, current) => {
+								return (
+									previous && article.tags.includes(current)
+								)
+							}, true)
+					}
+					return matchesTitle && matchesFilters
+				})
+				.map((article, index) => {
+					const cardProps = {
+						index: index,
+						tags: article.frontmatter.tags,
+						title: article.frontmatter.title,
+						description: article.frontmatter.description,
+						date: article.frontmatter.date,
+						image: article.frontmatter.image,
+						slug: article.slug,
+					}
+					return ArticleCard(cardProps)
+				})
 		} else {
 			return null
 		}
 	}
 
-	const articlesList = generateCards(articles)
+	const searchTermChanged = (event) => {
+		setSearchTerm(event.target.value)
+	}
+
+	const filterTapped = (type) => {
+		if (filters.includes(type)) {
+			setFilters(filters.filter((element) => element !== type))
+		} else {
+			setFilters((previusState) => [...previusState, type])
+		}
+	}
+
+	const isTagActive = (tag) => {
+		return filters.includes(tag)
+	}
+
+	const articlesList = generateCards(articles, searchTerm, filters)
 
 	return (
 		<>
@@ -38,14 +82,29 @@ const Index = ({ articles, title, description, ...props }) => {
 							stories and whatnot.
 						</h4>
 						<div className={classes.searchBar}>
-							<input type="text" placeholder="Search articles" />
-							<button>Search</button>
+							<input
+								onChange={searchTermChanged}
+								type="text"
+								placeholder="Search by title"
+							/>
 						</div>
 						<div className={classes.searchByTags}>
 							<p>Filters:</p>
-							<button>Web</button>
-							<button>iOS</button>
-							<button>Productivity</button>
+							{articleTags.map((tag) => {
+								return (
+									<button
+										className={
+											isTagActive(tag)
+												? classes.active
+												: null
+										}
+										key={tag}
+										onClick={filterTapped.bind(null, tag)}
+									>
+										{tag}
+									</button>
+								)
+							})}
 						</div>
 					</div>
 					<div className={classes.imageContainer}>

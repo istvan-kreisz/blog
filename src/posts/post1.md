@@ -2,7 +2,7 @@
 title: 'Hello, world1!'
 description: 'Humblebrag sartorial man braid ad vice, wolf ramps in cronut tousled reprehenderit'
 image: 'sample.png'
-tags: [yo1, yo2]
+tags: [ios, web]
 date: 'March 2020'
 ---
 
