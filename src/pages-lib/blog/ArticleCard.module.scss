@@ -54,6 +54,7 @@
 				display: flex;
 
 				li {
+					list-style: none;
 					$height: 32px;
 					margin-right: 1rem;
 					background-color: rgba($color: $color-success, $alpha: 0.1);
@@ -62,7 +63,7 @@
 					line-height: $height;
 					padding-left: 0.6rem;
 					padding-right: 0.6rem;
-					border-radius: $height / 2;
+					border-radius: $height / 3;
 					font-size: 0.8rem;
 					text-transform: uppercase;
 				}

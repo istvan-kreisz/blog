@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import classes from './Header.module.scss'
 
-export default function Header() {
+export default function Header(props) {
 	return (
 		<>
-			<header>
+			<header className={props.isWhite ? classes.white : null}>
 				<nav className={classes.navigation}>
 					<Link href="/">
 						<a className={classes.title}>Istvan Kreisz</a>

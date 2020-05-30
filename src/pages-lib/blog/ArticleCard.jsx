@@ -9,8 +9,8 @@ const ArticleCard = (props) => {
 					<img src="/images/sample.png" alt="" />
 					<div className={classes.articleContent}>
 						<ul className={classes.tags}>
-							{props.tags.forEach((element) => {
-								return <li>element</li>
+							{props.tags.map((element) => {
+								return <li>{element}</li>
 							})}
 						</ul>
 						<h3>{props.title}</h3>

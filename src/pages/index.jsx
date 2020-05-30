@@ -26,10 +26,11 @@ const Index = ({ articles, title, description, ...props }) => {
 					if (filters.length > 0) {
 						matchesFilters =
 							article &&
-							article.tags &&
+							article.frontmatter.tags &&
 							filters.reduce((previous, current) => {
 								return (
-									previous && article.tags.includes(current)
+									previous &&
+									article.frontmatter.tags.includes(current)
 								)
 							}, true)
 					}

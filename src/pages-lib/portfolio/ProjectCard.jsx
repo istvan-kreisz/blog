@@ -1,9 +1,6 @@
 import classes from './ProjectCard.module.scss'
 
 const ProjectCard = (props) => {
-	props.tags.forEach((element) => {
-		console.log(element)
-	})
 	return (
 		<li className={classes.projectCard} key={props.index}>
 			<a href={props.link}>

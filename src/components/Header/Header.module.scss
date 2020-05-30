@@ -1,5 +1,13 @@
 @import '../../shared/shared.scss';
 
+.white {
+	color: white;
+}
+
+.navigation * {
+	color: inherit;
+}
+
 .navigation {
 	margin-top: $padding-vertical-sm;
 	width: 100%;

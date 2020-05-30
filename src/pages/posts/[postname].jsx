@@ -12,7 +12,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 	return (
 		<>
 			<Backdrop {...{ image: frontmatter.image }} />
-			<Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
+			<Layout
+				{...{ isWhite: true }}
+				pageTitle={`${siteTitle} | ${frontmatter.title}`}
+			>
 				<h1 className={classes.title}>{frontmatter.title}</h1>
 				<article className={classes.article}>
 					{/* <div> */}

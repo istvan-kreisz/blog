@@ -15,7 +15,7 @@ export default function Layout({ children, pageTitle, ...props }) {
 					<title>{pageTitle}</title>
 				</Head>
 				<div className={classes.content}>
-					<Header />
+					<Header {...{ isWhite: props.isWhite || false }} />
 					{children}
 				</div>
 			</div>
