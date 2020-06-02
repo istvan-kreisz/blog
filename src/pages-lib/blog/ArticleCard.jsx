@@ -10,7 +10,7 @@ const ArticleCard = (props) => {
 					<div className={classes.articleContent}>
 						<ul className={classes.tags}>
 							{props.tags.map((element) => {
-								return <li>{element}</li>
+								return <li key={element}>{element}</li>
 							})}
 						</ul>
 						<h3>{props.title}</h3>

@@ -15,6 +15,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 			<Layout
 				{...{ isWhite: true }}
 				pageTitle={`${siteTitle} | ${frontmatter.title}`}
+				className={classes.layout}
 			>
 				<h1 className={classes.title}>{frontmatter.title}</h1>
 				<article className={classes.article}>
