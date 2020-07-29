@@ -6,11 +6,14 @@ module.exports = {
 		linkedin: 'https://www.linkedin.com/in/istvan-kreisz',
 	},
 	target: 'serverless',
-	webpack: function (config) {
+	webpack: function (config, { isServer }) {
 		config.module.rules.push({
 			test: /\.md$/,
 			use: 'raw-loader',
 		})
+		if (isServer) {
+			require('./scripts/generate-sitemap')
+		}
 		return config
 	},
 }
