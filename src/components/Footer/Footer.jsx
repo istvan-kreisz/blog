@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import classes from './Footer.module.scss'
-import { globals } from '../../shared/global'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Footer() {
@@ -12,25 +11,25 @@ export default function Footer() {
 						<a className={classes.title}>Istvan Kreisz</a>
 					</Link>
 					<div className={classes.mediaLinks}>
-						<a href={globals.github}>
+						<a href={process.env.github}>
 							<FontAwesomeIcon
 								icon={['fab', 'github']}
 								size="2x"
 							/>
 						</a>
-						<a href={globals.twitter}>
+						<a href={process.env.twitter}>
 							<FontAwesomeIcon
 								icon={['fab', 'twitter']}
 								size="2x"
 							/>
 						</a>
-						<a href={globals.linkedin}>
+						<a href={process.env.linkedin}>
 							<FontAwesomeIcon
 								icon={['fab', 'linkedin']}
 								size="2x"
 							/>
 						</a>
-						<a href={globals.instagram}>
+						<a href={process.env.instagram}>
 							<FontAwesomeIcon
 								icon={['fab', 'instagram']}
 								size="2x"

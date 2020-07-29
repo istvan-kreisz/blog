@@ -1,10 +1,9 @@
 import Layout from '../components/Layout/Layout'
 import Backdrop from '../components/Backdrop/Backdrop'
 import classes from '../pages-lib/about/about.module.scss'
-import { globals } from '../shared/global'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const About = ({ title, description, ...props }) => {
+const About = ({ title, description }) => {
 	return (
 		<>
 			<Backdrop></Backdrop>

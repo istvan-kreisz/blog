@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import Backdrop from '../../components/Backdrop/Backdrop'
@@ -19,9 +18,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 			>
 				<h1 className={classes.title}>{frontmatter.title}</h1>
 				<article className={classes.article}>
-					{/* <div> */}
 					<ReactMarkdown source={markdownBody} />
-					{/* </div> */}
 				</article>
 			</Layout>
 		</>

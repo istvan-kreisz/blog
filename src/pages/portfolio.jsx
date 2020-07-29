@@ -4,13 +4,7 @@ import ProjectCard from '../pages-lib/portfolio/ProjectCard'
 import classes from '../pages-lib/portfolio/portfolio.module.scss'
 import matter from 'gray-matter'
 
-const Portfolio = ({
-	webProjects,
-	iosProjects,
-	title,
-	description,
-	...props
-}) => {
+const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 	const generateCards = (projects) => {
 		if (projects && projects.length > 0) {
 			return projects.map((project, index) => {
