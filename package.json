@@ -14,6 +14,7 @@
 		"@fortawesome/free-solid-svg-icons": "^5.13.0",
 		"@fortawesome/react-fontawesome": "^0.1.9",
 		"@zeit/next-css": "^1.0.1",
+		"firebase": "^7.17.1",
 		"gray-matter": "^4.0.2",
 		"modern-normalize": "^0.7.0",
 		"next": "9.4.2",
