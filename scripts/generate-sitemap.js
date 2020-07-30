@@ -10,7 +10,7 @@ function addPage(page) {
 	let route = path === 'index' ? '' : '/' + path
 
 	return `  <url>
-    <loc>${`${process.env.WEBSITE_URL}${route}`}</loc>
+    <loc>${`${process.env.NEXT_PUBLIC_BASE_URL}${route}`}</loc>
     <changefreq>hourly</changefreq>
   </url>`
 }

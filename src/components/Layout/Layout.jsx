@@ -1,19 +1,13 @@
-import Head from 'next/head'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import Meta from '../Meta/Meta'
 import classes from './Layout.module.scss'
 
-export default function Layout({ children, pageTitle, ...props }) {
+export default function Layout({ children, pageTitle, description, ...props }) {
 	return (
 		<div className={classes.mainContainer}>
 			<div className={classes.main}>
-				<Head>
-					<meta
-						name="viewport"
-						content="width=device-width, initial-scale=1"
-					/>
-					<title>{pageTitle}</title>
-				</Head>
+				<Meta title={pageTitle} desc={description}></Meta>
 				<div className={classes.content}>
 					<Header {...{ isWhite: props.isWhite || false }} />
 					{children}

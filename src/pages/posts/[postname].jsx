@@ -5,7 +5,12 @@ import classes from '../../pages-lib/posts/post.module.scss'
 
 import Layout from '../../components/Layout/Layout'
 
-export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+export default function BlogPost({
+	siteTitle,
+	frontmatter,
+	markdownBody,
+	description,
+}) {
 	if (!frontmatter) return <></>
 
 	return (
@@ -15,6 +20,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 				{...{ isWhite: true }}
 				pageTitle={`${siteTitle} | ${frontmatter.title}`}
 				className={classes.layout}
+				description={description}
 			>
 				<h1 className={classes.title}>{frontmatter.title}</h1>
 				<article className={classes.article}>
@@ -37,6 +43,7 @@ export async function getStaticProps({ params }) {
 			siteTitle: config.title,
 			frontmatter: data.data,
 			markdownBody: data.content,
+			description: config.default.description,
 		},
 	}
 }
