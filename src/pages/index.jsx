@@ -5,7 +5,7 @@ import classes from '../pages-lib/blog/blog.module.scss'
 import matter from 'gray-matter'
 import { useState } from 'react'
 
-const Index = ({ articles, title, description, ...props }) => {
+const Index = ({ articles, title, description }) => {
 	const [searchTerm, setSearchTerm] = useState('')
 	const [filters, setFilters] = useState([])
 
@@ -78,10 +78,10 @@ const Index = ({ articles, title, description, ...props }) => {
 				<section className={classes.header}>
 					<div className={classes.intro}>
 						<h1>Welcome to my blog</h1>
-						<h4>
+						<p>
 							Read about what I’m up to here yo. Lots of cool
 							stories and whatnot.
-						</h4>
+						</p>
 						<div className={classes.searchBar}>
 							<input
 								onChange={searchTermChanged}

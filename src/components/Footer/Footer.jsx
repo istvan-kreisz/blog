@@ -11,25 +11,25 @@ export default function Footer() {
 						<a className={classes.title}>Istvan Kreisz</a>
 					</Link>
 					<div className={classes.mediaLinks}>
-						<a href={process.env.github}>
+						<a aria-label="github" href={process.env.github}>
 							<FontAwesomeIcon
 								icon={['fab', 'github']}
 								size="2x"
 							/>
 						</a>
-						<a href={process.env.twitter}>
+						<a aria-label="twitter" href={process.env.twitter}>
 							<FontAwesomeIcon
 								icon={['fab', 'twitter']}
 								size="2x"
 							/>
 						</a>
-						<a href={process.env.linkedin}>
+						<a aria-label="linkedin" href={process.env.linkedin}>
 							<FontAwesomeIcon
 								icon={['fab', 'linkedin']}
 								size="2x"
 							/>
 						</a>
-						<a href={process.env.instagram}>
+						<a aria-label="instagram" href={process.env.instagram}>
 							<FontAwesomeIcon
 								icon={['fab', 'instagram']}
 								size="2x"

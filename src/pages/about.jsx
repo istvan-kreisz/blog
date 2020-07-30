@@ -44,25 +44,31 @@ const About = ({ title, description }) => {
 					<section className={classes.sidebar}>
 						<div className={classes.mediaLinks}>
 							<h4>Follow me:</h4>
-							<a href={process.env.github}>
+							<a aria-label="github" href={process.env.github}>
 								<FontAwesomeIcon
 									icon={['fab', 'github']}
 									size="lg"
 								/>
 							</a>
-							<a href={process.env.twitter}>
+							<a aria-label="twitter" href={process.env.twitter}>
 								<FontAwesomeIcon
 									icon={['fab', 'twitter']}
 									size="lg"
 								/>
 							</a>
-							<a href={process.env.linkedin}>
+							<a
+								aria-label="linkedin"
+								href={process.env.linkedin}
+							>
 								<FontAwesomeIcon
 									icon={['fab', 'linkedin']}
 									size="lg"
 								/>
 							</a>
-							<a href={process.env.instagram}>
+							<a
+								aria-label="instagram"
+								href={process.env.instagram}
+							>
 								<FontAwesomeIcon
 									icon={['fab', 'instagram']}
 									size="lg"
