@@ -46,7 +46,7 @@ const Index = ({ articles, title, description }) => {
 						image: article.frontmatter.image,
 						slug: article.slug,
 					}
-					return ArticleCard(cardProps)
+					return <ArticleCard {...cardProps}></ArticleCard>
 				})
 		} else {
 			return null
@@ -77,13 +77,15 @@ const Index = ({ articles, title, description }) => {
 			<Layout pageTitle={`${title} | Blog`} description={description}>
 				<section className={classes.header}>
 					<div className={classes.intro}>
-						<h1>Welcome to my blog</h1>
+						<h1>Welcome to my blog!</h1>
 						<p>
-							Read about what I’m up to here yo. Lots of cool
-							stories and whatnot.
+							I share random tidbits about my journey as a
+							developer (web and iOS) & product creator.
 						</p>
 						<div className={classes.searchBar}>
+							<label htmlFor="searchbar">Search Bar</label>
 							<input
+								id="searchbar"
 								onChange={searchTermChanged}
 								type="text"
 								placeholder="Search by title"

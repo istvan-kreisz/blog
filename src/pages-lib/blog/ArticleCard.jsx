@@ -13,7 +13,7 @@ const ArticleCard = (props) => {
 								return <li key={element}>{element}</li>
 							})}
 						</ul>
-						<h3>{props.title}</h3>
+						<h2>{props.title}</h2>
 						<p>{props.description}</p>
 						<p className={classes.date}>{props.date}</p>
 					</div>

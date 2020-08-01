@@ -33,7 +33,7 @@
 			}
 		}
 
-		h4 {
+		h2 {
 			font-size: 1.2rem;
 			font-weight: 600;
 			margin-top: 1rem;
@@ -45,13 +45,22 @@
 		}
 	}
 
-	h2 {
+	h3 {
 		font-size: 2.2rem;
 		font-weight: 300;
 	}
 
 	p {
 		color: $color-gray;
+		line-height: 1.4;
+	}
+
+	.email {
+		display: block;
+		margin: 1rem auto;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
 	}
 }
 
@@ -76,6 +85,7 @@
 		font-size: 0.9rem;
 		color: $color-gray;
 		margin: 0.5rem 0;
+		line-height: 1.4;
 	}
 
 	.sidebarItem {
@@ -107,7 +117,7 @@
 	.personalDetails {
 		@extend .sidebarItem;
 
-		h4 {
+		h5 {
 			margin-top: 0;
 		}
 	}

@@ -9,3 +9,12 @@
 @mixin default-shadow() {
 	box-shadow: 0 10px 35px 0 rgba($color: #000000, $alpha: 0.1);
 }
+
+@mixin sr-only() {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

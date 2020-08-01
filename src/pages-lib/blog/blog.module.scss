@@ -49,12 +49,18 @@
 			font-size: 1.1rem;
 			font-weight: 400;
 			margin-top: 1rem;
+			max-width: 580px;
+			line-height: 1.5;
 		}
 
 		.searchBar {
 			margin-top: 3rem;
 			width: 100%;
 			position: relative;
+
+			label {
+				@include sr-only();
+			}
 
 			@include min-width() {
 				width: 93%;

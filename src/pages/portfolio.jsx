@@ -37,12 +37,12 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 				<section className={classes.header}>
 					<div className={classes.titlebar}>
 						<h1 className={classes.title}>Portfolio</h1>
-						<h4>Here are all my cool projects, check them out!</h4>
+						<p>Here are all my cool projects, check them out!</p>
 					</div>
 				</section>
 				<section className={classes.projects}>
 					<div className={classes.sectionTitle}>
-						<h3>Web Development</h3>
+						<h2>Web Development</h2>
 						<p>Here's all my Web projects, blah blah blah</p>
 					</div>
 					{webProjectList ? (
@@ -51,7 +51,7 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 						</ul>
 					) : null}
 					<div className={classes.sectionTitle}>
-						<h3>iOS Development</h3>
+						<h2>iOS Development</h2>
 						<p>Here's all my iOS projects, blah blah blah</p>
 					</div>
 					{iosProjectList ? (
