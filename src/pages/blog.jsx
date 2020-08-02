@@ -112,6 +112,7 @@ const Index = ({ articles, title, description }) => {
 					</div>
 					<div className={classes.imageContainer}>
 						<img src="images/Self.jpeg" alt="" />
+						<div className={classes.overlay}></div>
 					</div>
 				</section>
 				<section className={classes.articles}>
