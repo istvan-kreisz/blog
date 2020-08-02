@@ -6,7 +6,10 @@ const ArticleCard = (props) => {
 		<li className={classes.articleCard} key={props.index}>
 			<Link href="/posts/[postname]" as={`/posts/${props.slug}`}>
 				<a aria-label={'post ' + props.slug}>
-					<img src="/images/sample.png" alt="" />
+					<div className={classes.imageContainer}>
+						<img src="/images/sample.png" alt="" />
+						<div className={classes.overlay}></div>
+					</div>
 					<div className={classes.articleContent}>
 						<ul className={classes.tags}>
 							{props.tags.map((element) => {
