@@ -12,7 +12,7 @@
 	}
 
 	.imageContainer {
-		flex-basis: 360px;
+		flex-basis: 320px;
 		flex-shrink: 2;
 		display: none;
 		margin-left: 2rem;
@@ -23,6 +23,7 @@
 
 		img {
 			width: 100%;
+			border-radius: 16px;
 		}
 	}
 

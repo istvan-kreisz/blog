@@ -111,7 +111,7 @@ const Index = ({ articles, title, description }) => {
 						</div>
 					</div>
 					<div className={classes.imageContainer}>
-						<img src="/images/sample.png" alt="" />
+						<img src="images/Self.jpeg" alt="" />
 					</div>
 				</section>
 				<section className={classes.articles}>

@@ -75,7 +75,27 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 					) : null}
 					<div className={classes.sectionTitle}>
 						<h2>iOS Development</h2>
-						<p>Here's all my iOS projects, blah blah blah</p>
+						<p>
+							I started iOS development in my final year in
+							college. The well-designed and user-friendly
+							interfaces of iOS apps got me interested and once I
+							put together my first simple app I was hooked. I
+							spent the next 2 years learning the ins and outs of
+							iOS / software development, building apps in my free
+							time, working a full-time iOS development job and
+							even co-founding an iOS game development company.
+							I've used various different technologies &
+							frameworks in my work as an app developer, some of
+							the most notable ones:{' '}
+							<span>
+								Swift, Reactive Programming (Combine, RxSwift),
+								UIKit, SwiftUI, Realm, Core Data, Unit, UI
+								tests, Circle CI, Fastlane, AWS Cognito, AWS
+								Amplify, Push Notifications, SpriteKit,
+								Firebase, MVC, MVVM, MVVM-C
+							</span>
+							.
+						</p>
 					</div>
 					{iosProjectList ? (
 						<ul className={classes.projectList}>
