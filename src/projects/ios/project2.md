@@ -1,6 +1,7 @@
 ---
 title: 'Ball Smasher'
-image: 'sample.png'
+image: 'images/BallSmasher.jpg'
+backgroundColor: '#000000'
 tags: [Swift, SpriteKit, MVC, Realm]
 date: 'May - July 2018'
 link: 'https://apps.apple.com/us/app/ball-smasher/id1381559021'

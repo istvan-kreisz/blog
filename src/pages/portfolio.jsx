@@ -18,6 +18,7 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 					date: projectData.date,
 					image: projectData.image,
 					link: projectData.link,
+					backgroundColor: projectData.backgroundColor,
 				}
 				return ProjectCard(props)
 			})

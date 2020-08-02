@@ -1,6 +1,7 @@
 ---
 title: 'This Website'
-image: 'sample.png'
+image: 'images/Blog.jpg'
+backgroundColor: '#D9F5FA'
 tags: [React, Next.js, Netlify, SCSS]
 date: 'June 2020'
 link: 'https://istvan-kreisz.com'

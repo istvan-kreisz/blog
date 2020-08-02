@@ -18,7 +18,7 @@
 	}
 
 	.container {
-		$orientation-change-width: 800px;
+		$orientation-change-width: 850px;
 		display: flex;
 		flex-direction: column;
 
@@ -29,24 +29,28 @@
 		img {
 			flex-basis: 200px;
 			width: 100%;
-			object-fit: cover;
 			overflow: hidden;
-
-			@include min-width($orientation-change-width) {
-				flex-basis: 100%;
-				width: 50%;
-				height: auto;
-			}
+			object-fit: contain;
 
 			&.rightAligned {
-				order: 1;
+				@include min-width($orientation-change-width) {
+					order: 1;
+				}
+			}
+
+			@include min-width($orientation-change-width) {
+				flex-basis: 30%;
+				height: auto;
 			}
 		}
 
 		.projectContent {
-			flex-basis: 100%;
 			display: flex;
 			flex-direction: column;
+
+			@include min-width($orientation-change-width) {
+				flex-basis: 70%;
+			}
 
 			padding: 1.5rem;
 

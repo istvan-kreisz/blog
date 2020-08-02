@@ -1,6 +1,7 @@
 ---
 title: 'Hide & Seek World'
-image: 'sample.png'
+image: 'images/Hide&Seek.jpg'
+backgroundColor: '#0D1C26'
 tags:
     [
         React,

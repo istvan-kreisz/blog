@@ -1,6 +1,7 @@
 ---
 title: 'Type Fast'
-image: 'sample.png'
+image: 'images/TypeFast.jpg'
+backgroundColor: '#3d3d3d'
 tags: [Swift, Core Data, MVC]
 date: 'Sept 2017'
 link: 'https://apps.apple.com/us/app/type-fast-typing-game/id1279424231'

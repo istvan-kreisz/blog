@@ -1,9 +1,10 @@
 ---
-title: 'LabTwin'
-image: 'sample.png'
-tags: [MVVM-C, RxSwift, Realm, AWS Amplify, Circle CI, Fastlane]
-date: 'Jan 2019 - Apr 2020'
-link: 'https://labtwin.com'
+title: 'Prio - Cross Platform Todo List'
+image: 'images/Prio.jpg'
+tags: [Firebase Auth, Firebase Firestore, SwiftUI]
+date: 'April 2020'
+link: 'https://apps.apple.com/us/app/prio-to-do-list-tasks/id1507821177'
 ---
 
-I worked for **LabTwin**, a Berlin based startup as an iOS developer. We were creating a **voice powered lab assistant** that helps scientists take notes, follow protocols and look up information in a hands free way. I was part of a 3 member iOS development team and I took part in various aspects of app development, including: migrating our **offline data storage** system from [UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults) to a more scalable one ([Realm](https://realm.io/)), setting up **CI workflows**, writing **Unit & UI tests**, building a silent **push notification based syncing solution** to always keep data up to date with the server, integrating **user authentication using AWS** frameworks, improving the scalability of our **app architecture** etc.
+The iOS component of my cross platform pet project [Prio](https://prio-landing.firebaseapp.com/).
+Prio is a full-featured todo list app that has both web and iOS components, and the two sync together in real time, thanks to Firebase FireStore. It is also the first app I wrote using Apple's new UI framework [SwiftUI](https://developer.apple.com/xcode/swiftui/).
