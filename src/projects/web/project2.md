@@ -1,7 +1,7 @@
 ---
 title: 'This Website'
 image: 'sample.png'
-tags: [React, Next.js, Netlify hosting, SCSS]
+tags: [React, Next.js, Netlify, SCSS]
 date: 'June 2020'
 link: 'https://istvan-kreisz.com'
 ---
