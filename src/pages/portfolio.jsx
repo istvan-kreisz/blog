@@ -8,14 +8,16 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 	const generateCards = (projects) => {
 		if (projects && projects.length > 0) {
 			return projects.map((project, index) => {
+				const projectData = project.data
+				const projectDesctiption = project.content
 				const props = {
 					index: index,
-					tags: project.tags,
-					title: project.title,
-					description: project.description,
-					date: project.date,
-					image: project.image,
-					link: project.link,
+					tags: projectData.tags,
+					title: projectData.title,
+					description: projectDesctiption,
+					date: projectData.date,
+					image: projectData.image,
+					link: projectData.link,
 				}
 				return ProjectCard(props)
 			})
@@ -37,13 +39,33 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 				<section className={classes.header}>
 					<div className={classes.titlebar}>
 						<h1 className={classes.title}>Portfolio</h1>
-						<p>Here are all my cool projects, check them out!</p>
+						<p>
+							A showcase of my past web and iOS development
+							projects
+						</p>
 					</div>
 				</section>
 				<section className={classes.projects}>
 					<div className={classes.sectionTitle}>
 						<h2>Web Development</h2>
-						<p>Here's all my Web projects, blah blah blah</p>
+						<p>
+							I recently took up web development after about 2
+							years of professional iOS development. I can safely
+							say I fell in love with the platform. I've been
+							mainly focusing on acquiring the foundational skills
+							of <span>frontend</span> web dev (
+							<span>HTML, CSS, JS</span>), as well as learning my
+							frontend framework of choice, <span>React</span>.
+							Besides that I've been using{' '}
+							<span>Firebase services</span> (authentication,
+							analytics, database, hosting),{' '}
+							<span>SSG (Next.js) </span>and{' '}
+							<span>
+								serverless functions (Google Cloud Functions)
+							</span>{' '}
+							extensively in my projects. Also, I've taken my
+							first steps in learning <span>Node.js</span>.
+						</p>
 					</div>
 					{webProjectList ? (
 						<ul className={classes.projectList}>
@@ -69,13 +91,13 @@ export async function getStaticProps() {
 	const configData = await import(`../siteconfig.json`)
 
 	const projects = (context) => {
-		const keys = context.keys()
+		const keys = context.keys().reverse()
 		const values = keys.map(context)
 
 		const data = keys.map((key, index) => {
 			const value = values[index]
 			const document = matter(value.default)
-			return document.data
+			return { data: document.data, content: document.content }
 		})
 		return data
 	}

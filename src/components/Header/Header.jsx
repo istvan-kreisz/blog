@@ -11,13 +11,13 @@ export default function Header(props) {
 					</Link>
 					<div className={classes.spacer}></div>
 					<div className={classes.links}>
-						<Link href="/about">
+						<Link href="/">
 							<a>About</a>
 						</Link>
 						<Link href="/portfolio">
 							<a>Portfolio</a>
 						</Link>
-						<Link href="/">
+						<Link href="/blog">
 							<a>Blog</a>
 						</Link>
 					</div>

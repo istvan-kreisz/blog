@@ -1,9 +1,10 @@
 import classes from './ProjectCard.module.scss'
+import ReactMarkdown from 'react-markdown'
 
 const ProjectCard = (props) => {
 	return (
 		<li className={classes.projectCard} key={props.index}>
-			<a href={props.link}>
+			<a className={classes.container} href={props.link}>
 				<img
 					className={
 						props.index % 2 == 0 ? null : classes.rightAligned
@@ -18,7 +19,8 @@ const ProjectCard = (props) => {
 						})}
 					</ul>
 					<h3>{props.title}</h3>
-					<p>{props.description}</p>
+					<ReactMarkdown source={props.description} />
+					<div className={classes.spacer}></div>
 					<p className={classes.date}>{props.date}</p>
 				</div>
 			</a>

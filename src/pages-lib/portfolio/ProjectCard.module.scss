@@ -2,18 +2,23 @@
 
 .projectCard {
 	@include default-shadow;
-	$width: 320px;
+	display: block;
+	position: relative;
 	border-radius: 16px;
 	border: 1px solid $color-gray-light;
 	overflow: hidden;
-	height: $width;
+	margin-top: 4rem;
+
+	&:nth-of-type(1) {
+		margin-top: 0;
+	}
 
 	&:hover {
 		animation: scaleUp 0.35s ease-out forwards;
 	}
 
-	a {
-		$orientation-change-width: 550px;
+	.container {
+		$orientation-change-width: 800px;
 		display: flex;
 		flex-direction: column;
 
@@ -22,13 +27,15 @@
 		}
 
 		img {
+			flex-basis: 200px;
 			width: 100%;
-			height: 200px;
 			object-fit: cover;
+			overflow: hidden;
 
 			@include min-width($orientation-change-width) {
-				height: $width;
-				width: 45%;
+				flex-basis: 100%;
+				width: 50%;
+				height: auto;
 			}
 
 			&.rightAligned {
@@ -37,16 +44,26 @@
 		}
 
 		.projectContent {
+			flex-basis: 100%;
+			display: flex;
+			flex-direction: column;
+
 			padding: 1.5rem;
 
 			h3 {
-				font-weight: 400;
+				font-weight: 600;
 				margin: 1rem 0;
 			}
 
 			p {
 				color: $color-gray;
 				margin-top: 0;
+				line-height: 1.4;
+			}
+
+			.spacer {
+				flex-shrink: 1000;
+				flex-grow: 1000;
 			}
 
 			.date {
@@ -58,10 +75,12 @@
 			.techList {
 				padding-left: 0;
 				display: flex;
+				flex-wrap: wrap;
+				margin-left: -4px;
 
 				li {
+					margin: 4px;
 					$height: 32px;
-					margin-right: 1rem;
 					background-color: rgba($color: $color-success, $alpha: 0.1);
 					color: $color-success;
 					height: $height;

@@ -1,156 +1,149 @@
-import Layout from '../components/Layout/Layout.jsx'
-import ArticleCard from '../pages-lib/blog/ArticleCard'
-import Backdrop from '../components/BackdropCircular/BackdropCircular'
-import classes from '../pages-lib/blog/blog.module.scss'
-import matter from 'gray-matter'
-import { useState } from 'react'
+import Layout from '../components/Layout/Layout'
+import Backdrop from '../components/Backdrop/Backdrop'
+import classes from '../pages-lib/about/about.module.scss'
+import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Index = ({ articles, title, description }) => {
-	const [searchTerm, setSearchTerm] = useState('')
-	const [filters, setFilters] = useState([])
-
-	const articleTags = ['web', 'ios', 'productivity']
-
-	const generateCards = (articles, searchTerm, filters) => {
-		if (articles && articles.length > 0) {
-			return articles
-				.filter((article) => {
-					const matchesTitle =
-						article &&
-						article.frontmatter &&
-						article.frontmatter.title &&
-						article.frontmatter.title
-							.toLowerCase()
-							.search(searchTerm) !== -1
-					let matchesFilters = true
-					if (filters.length > 0) {
-						matchesFilters =
-							article &&
-							article.frontmatter.tags &&
-							filters.reduce((previous, current) => {
-								return (
-									previous &&
-									article.frontmatter.tags.includes(current)
-								)
-							}, true)
-					}
-					return matchesTitle && matchesFilters
-				})
-				.map((article, index) => {
-					const cardProps = {
-						index: index,
-						tags: article.frontmatter.tags,
-						title: article.frontmatter.title,
-						description: article.frontmatter.description,
-						date: article.frontmatter.date,
-						image: article.frontmatter.image,
-						slug: article.slug,
-					}
-					return <ArticleCard {...cardProps}></ArticleCard>
-				})
-		} else {
-			return null
-		}
-	}
-
-	const searchTermChanged = (event) => {
-		setSearchTerm(event.target.value)
-	}
-
-	const filterTapped = (type) => {
-		if (filters.includes(type)) {
-			setFilters(filters.filter((element) => element !== type))
-		} else {
-			setFilters((previusState) => [...previusState, type])
-		}
-	}
-
-	const isTagActive = (tag) => {
-		return filters.includes(tag)
-	}
-
-	const articlesList = generateCards(articles, searchTerm, filters)
-
+const About = ({ title, description }) => {
 	return (
 		<>
-			<Backdrop className={classes.backdrop} />
-			<Layout pageTitle={`${title} | Blog`} description={description}>
-				<section className={classes.header}>
-					<div className={classes.intro}>
-						<h1>Welcome to my blog!</h1>
+			<Backdrop></Backdrop>
+			<Layout pageTitle={`${title} | About`} description={description}>
+				<div className={classes.container}>
+					<section className={classes.main}>
+						<div className={classes.titlebar}>
+							<h1 className="title">Hi, I'm Istvan!</h1>
+							<h2>Web and iOS Developer</h2>
+						</div>
+
 						<p>
-							I share random tidbits about my journey as a
-							developer (web and iOS) & product creator.
+							Lifelong learner & creator. I love technology. But
+							what really gets me going is working on meaningful
+							products, especially if they can make me a
+							millionaire one day. <br /> Check out my bio below
+							or visit the{' '}
+							<Link href="/portfolio">
+								<a>Portfolio</a>
+							</Link>{' '}
+							page to see my past works.
+							<br />
+							For stories about software development & building
+							products, visit my
+							<Link href="/blog">
+								<a> Blog</a>
+							</Link>
+							{''}.
 						</p>
-						<div className={classes.searchBar}>
-							<label htmlFor="searchbar">Search Bar</label>
-							<input
-								id="searchbar"
-								onChange={searchTermChanged}
-								type="text"
-								placeholder="Search by title"
-							/>
+					</section>
+					<section className={classes.sidebar}>
+						<div className={classes.mediaLinks}>
+							<h4>Follow me:</h4>
+							<a aria-label="github" href={process.env.github}>
+								<FontAwesomeIcon
+									icon={['fab', 'github']}
+									size="lg"
+								/>
+							</a>
+							<a aria-label="twitter" href={process.env.twitter}>
+								<FontAwesomeIcon
+									icon={['fab', 'twitter']}
+									size="lg"
+								/>
+							</a>
+							<a
+								aria-label="linkedin"
+								href={process.env.linkedin}
+							>
+								<FontAwesomeIcon
+									icon={['fab', 'linkedin']}
+									size="lg"
+								/>
+							</a>
+							<a
+								aria-label="instagram"
+								href={process.env.instagram}
+							>
+								<FontAwesomeIcon
+									icon={['fab', 'instagram']}
+									size="lg"
+								/>
+							</a>
 						</div>
-						<div className={classes.searchByTags}>
-							<p>Filters:</p>
-							{articleTags.map((tag) => {
-								return (
-									<button
-										className={
-											isTagActive(tag)
-												? classes.active
-												: null
-										}
-										key={tag}
-										onClick={filterTapped.bind(null, tag)}
-									>
-										{tag}
-									</button>
-								)
-							})}
+						<div className={classes.personalDetails}>
+							<h4>Personal details:</h4>
+							<h5>Location</h5>
+							<p>Berlin, Germany</p>
+							<h5>Phone</h5>
+							<a href="tel:+36308224417">
+								<p>+36308224417</p>
+							</a>
+							<h5>Email</h5>
+							<a href="mailto: hello@istvan-kreisz.com">
+								<p>hello@istvan-kreisz.com</p>
+							</a>
 						</div>
-					</div>
-					<div className={classes.imageContainer}>
-						<img src="/images/sample.png" alt="" />
-					</div>
-				</section>
-				<section className={classes.articles}>
-					{articlesList ? (
-						<ul className={classes.articlesList}>{articlesList}</ul>
-					) : null}
+					</section>
+				</div>
+				<section className={classes.bio}>
+					<h3>A little about me:</h3>
+					<p>
+						I'm Hungarian-American dual citizen, born in the US but
+						grew up in Hungary. After high school I decided to move
+						to the US to do my studies there. I graduated as an
+						electrical engineer in 2017 only to realize that my true
+						passion was software development. So I did a bit of a
+						career change and taught myself as much as I could about
+						programming over the course of the next couple years.
+						<br />
+						<br />I started my career as an iOS developer, where I
+						made some{' '}
+						<a href="https://apps.apple.com/us/developer/istvan-kreisz/id1279423840">
+							apps
+						</a>{' '}
+						on my own, worked a full time{' '}
+						<a href="https://www.labtwin.com/">job</a> in Berlin and
+						was the co-founder and lead developer of a company
+						creating a{' '}
+						<a href="https://apps.apple.com/us/app/ball-smasher/id1381559021">
+							game
+						</a>{' '}
+						that reached the #2 spot on the US App Store and got
+						millions of downloads.
+						<br />
+						<br />
+						Recently I've shifted my focus from iOS to web
+						development in order to grow my skillset and
+						(eventually) become a full-stack developer. Check out
+						some of my works <a href="/portfolio">here</a>.
+						<br />
+						<br />
+						If you’re interested in my journey, check out my{' '}
+						<a href="/blog">blog</a> or follow me on Twitter where
+						I’ll be posting regular updates. If you want to get in
+						touch, you can reach me at:
+						<a
+							className={classes.email}
+							href="mailto:hello@istvan-kreisz.com"
+						>
+							hello@istvan-kreisz.com
+						</a>
+						or any of the social media links below.
+					</p>
 				</section>
 			</Layout>
 		</>
 	)
 }
 
-export default Index
-
 export async function getStaticProps() {
 	const configData = await import(`../siteconfig.json`)
 
-	const articles = ((context) => {
-		const keys = context.keys()
-		const values = keys.map(context)
-
-		const data = keys.map((key, index) => {
-			let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
-			const value = values[index]
-			const document = matter(value.default)
-			return {
-				frontmatter: document.data,
-				markdownBody: document.content,
-				slug,
-			}
-		})
-		return data
-	})(require.context('../posts', true, /\.md$/))
-
 	return {
 		props: {
-			articles: articles,
 			title: configData.default.title,
 			description: configData.default.description,
 		},
 	}
 }
+
+export default About
