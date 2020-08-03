@@ -39,9 +39,9 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 			>
 				<section className={classes.header}>
 					<div className={classes.titlebar}>
-						<h1 className={classes.title}>Portfolio</h1>
+						<h1 className={classes.title}>Projects</h1>
 						<p>
-							A showcase of my past web and iOS development
+							Here are some of my past web and iOS development
 							projects
 						</p>
 					</div>

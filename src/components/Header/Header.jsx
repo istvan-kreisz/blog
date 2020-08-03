@@ -23,8 +23,8 @@ export default function Header(props) {
 								<Link href="/">
 									<a>About</a>
 								</Link>
-								<Link href="/portfolio">
-									<a>Portfolio</a>
+								<Link href="/projects">
+									<a>Projects</a>
 								</Link>
 								<Link href="/blog">
 									<a>Blog</a>

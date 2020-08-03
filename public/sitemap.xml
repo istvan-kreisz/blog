@@ -8,7 +8,7 @@
     <changefreq>hourly</changefreq>
   </url>
   <url>
-    <loc>https://istvan-kreisz.com/portfolio</loc>
+    <loc>https://istvan-kreisz.com/projects</loc>
     <changefreq>hourly</changefreq>
   </url>
   <url>
@@ -21,10 +21,6 @@
   </url>
   <url>
     <loc>https://istvan-kreisz.com/posts/post3</loc>
-    <changefreq>hourly</changefreq>
-  </url>
-  <url>
-    <loc>https://istvan-kreisz.com/posts/post4</loc>
     <changefreq>hourly</changefreq>
   </url>
 </urlset>

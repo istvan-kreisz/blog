@@ -22,8 +22,8 @@ const About = ({ title, description }) => {
 							products, especially if they can make me a
 							millionaire one day. <br /> Check out my bio below
 							or visit the{' '}
-							<Link href="/portfolio">
-								<a>Portfolio</a>
+							<Link href="/projects">
+								<a>Projects</a>
 							</Link>{' '}
 							page to see my past works.
 							<br />
@@ -114,7 +114,7 @@ const About = ({ title, description }) => {
 						Recently I've shifted my focus from iOS to web
 						development in order to grow my skillset and
 						(eventually) become a full-stack developer. Check out
-						some of my works <a href="/portfolio">here</a>.
+						some of my works <a href="/projects">here</a>.
 						<br />
 						<br />
 						If you’re interested in my journey, check out my{' '}
