@@ -3,18 +3,9 @@
 .articleCard {
 	@include default-shadow;
 	border-radius: 16px;
-	width: 80%;
-	max-width: 100%;
+	width: 100%;
 	list-style: none;
 	overflow: hidden;
-
-	@include min-width($desktop-width) {
-		width: 300px;
-	}
-
-	@include min-width(1200px) {
-		width: 330px;
-	}
 
 	&:hover {
 		animation: scaleUp 0.35s ease-out forwards;

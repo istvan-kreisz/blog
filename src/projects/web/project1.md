@@ -1,6 +1,6 @@
 ---
 title: 'Prio - Cross Platform Todo List'
-image: 'images/Prio.jpg'
+image: 'Prio.jpg'
 tags:
     [
         Firebase Auth,

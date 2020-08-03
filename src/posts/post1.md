@@ -1,8 +1,7 @@
 ---
 title: 'My web development learning plan'
 description: ''
-image: 'sample.png'
-tags: [web]
+tags: [web, productivity]
 date: 'March 2020'
 ---
 

@@ -9,7 +9,12 @@ export default function Layout({ children, pageTitle, description, ...props }) {
 			<div className={classes.main}>
 				<Meta title={pageTitle} desc={description}></Meta>
 				<div className={classes.content}>
-					<Header {...{ isWhite: props.isWhite || false }} />
+					<Header
+						isWhite={props.isWhite || false}
+						leftLink={props.leftLink}
+						rightLinks={props.rightLinks}
+						color={props.headerColor}
+					/>
 					{children}
 				</div>
 			</div>

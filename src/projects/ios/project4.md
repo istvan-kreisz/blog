@@ -1,6 +1,6 @@
 ---
 title: 'Draw It'
-image: 'images/DrawIt.jpg'
+image: 'DrawIt.jpg'
 backgroundColor: '#28B0E6'
 tags: [SwiftUI]
 date: 'April 2020'

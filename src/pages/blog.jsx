@@ -149,7 +149,7 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-			articles: articles,
+			articles: articles.reverse(),
 			title: configData.default.title,
 			description: configData.default.description,
 		},

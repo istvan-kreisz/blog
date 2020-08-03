@@ -8,19 +8,16 @@
 	color: $color-gray-light;
 
 	@include min-width() {
-		margin-top: -1rem;
+		margin-top: 0rem;
 		font-size: 3rem;
 	}
 }
 
-.layout {
-	position: relative;
-}
-
 .article {
-	margin-top: 13rem;
+	margin-top: 15rem;
 
-	p {
+	p,
+	li {
 		line-height: 1.6;
 	}
 

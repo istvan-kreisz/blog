@@ -1,6 +1,6 @@
 ---
 title: 'Prio - Cross Platform Todo List'
-image: 'images/Prio.jpg'
+image: 'Prio.jpg'
 tags: [Firebase Auth, Firebase Firestore, SwiftUI]
 date: 'April 2020'
 link: 'https://apps.apple.com/us/app/prio-to-do-list-tasks/id1507821177'

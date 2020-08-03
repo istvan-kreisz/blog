@@ -10,7 +10,7 @@ const ProjectCard = (props) => {
 						props.index % 2 == 0 ? null : classes.rightAligned
 					}
 					style={{ backgroundColor: props.backgroundColor }}
-					src={props.image}
+					src={'images/portfolio/' + props.image}
 					alt=""
 				/>
 				<div className={classes.projectContent}>

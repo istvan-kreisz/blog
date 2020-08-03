@@ -1,6 +1,6 @@
 ---
 title: 'Ball Smasher'
-image: 'images/BallSmasher.jpg'
+image: 'BallSmasher.jpg'
 backgroundColor: '#000000'
 tags: [Swift, SpriteKit, MVC, Realm]
 date: 'May - July 2018'

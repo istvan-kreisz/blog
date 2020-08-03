@@ -7,7 +7,12 @@ const ArticleCard = (props) => {
 			<Link href="/posts/[postname]" as={`/posts/${props.slug}`}>
 				<a aria-label={'post ' + props.slug}>
 					<div className={classes.imageContainer}>
-						<img src="/images/sample.png" alt="" />
+						<img
+							src={
+								'images/posts/' + props.slug + '-thumbnail.jpg'
+							}
+							alt=""
+						/>
 						<div className={classes.overlay}></div>
 					</div>
 					<div className={classes.articleContent}>

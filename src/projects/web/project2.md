@@ -1,6 +1,6 @@
 ---
 title: 'This Website'
-image: 'images/Blog.jpg'
+image: 'Blog.jpg'
 backgroundColor: '#D9F5FA'
 tags: [React, Next.js, Netlify, SCSS]
 date: 'June 2020'

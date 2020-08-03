@@ -1,9 +1,5 @@
 @import '../../shared/shared.scss';
 
-.white {
-	color: white;
-}
-
 .navigation * {
 	color: inherit;
 }
@@ -19,6 +15,21 @@
 	@include min-width() {
 		margin-top: $padding-vertical-sm * 1.5;
 		margin-bottom: $padding-vertical-lg;
+	}
+
+	.titleContainer {
+		flex-basis: 100%;
+		text-align: center;
+
+		@include min-width() {
+			flex-basis: initial;
+		}
+
+		a {
+			font-weight: 800;
+			font-style: italic;
+			font-size: 1.5rem;
+		}
 	}
 }
 
@@ -49,18 +60,6 @@
 		width: 300px;
 		margin-top: 0;
 		margin-bottom: 0;
-		flex-basis: initial;
-	}
-}
-
-.title {
-	font-weight: 800;
-	font-style: italic;
-	font-size: 1.5rem;
-	flex-basis: 100%;
-	text-align: center;
-
-	@include min-width() {
 		flex-basis: initial;
 	}
 }

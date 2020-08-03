@@ -4,22 +4,35 @@ import classes from './Header.module.scss'
 export default function Header(props) {
 	return (
 		<>
-			<header className={props.isWhite ? classes.white : null}>
+			<header style={{ ...(props.color && { color: props.color }) }}>
 				<nav className={classes.navigation}>
-					<Link href="/">
-						<a className={classes.title}>Istvan Kreisz</a>
-					</Link>
+					<div className={classes.titleContainer}>
+						{props.leftLink === undefined ? (
+							<Link href="/">
+								<a>Istvan Kreisz</a>
+							</Link>
+						) : (
+							props.leftLink
+						)}
+					</div>
 					<div className={classes.spacer}></div>
 					<div className={classes.links}>
-						<Link href="/">
-							<a>About</a>
-						</Link>
-						<Link href="/portfolio">
-							<a>Portfolio</a>
-						</Link>
-						<Link href="/blog">
-							<a>Blog</a>
-						</Link>
+						{props.rightLinks === undefined ? (
+							<>
+								{' '}
+								<Link href="/">
+									<a>About</a>
+								</Link>
+								<Link href="/portfolio">
+									<a>Portfolio</a>
+								</Link>
+								<Link href="/blog">
+									<a>Blog</a>
+								</Link>
+							</>
+						) : (
+							props.rightLinks
+						)}
 					</div>
 				</nav>
 			</header>

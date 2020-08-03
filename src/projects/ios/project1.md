@@ -1,6 +1,6 @@
 ---
 title: 'Type Fast'
-image: 'images/TypeFast.jpg'
+image: 'TypeFast.jpg'
 backgroundColor: '#3d3d3d'
 tags: [Swift, Core Data, MVC]
 date: 'Sept 2017'

@@ -1,6 +1,6 @@
 ---
 title: 'LabTwin'
-image: 'images/LabTwin.jpg'
+image: 'LabTwin.jpg'
 tags: [MVVM-C, RxSwift, Realm, AWS Amplify, Circle CI, Fastlane]
 date: 'Jan 2019 - Apr 2020'
 link: 'https://www.labtwin.com'

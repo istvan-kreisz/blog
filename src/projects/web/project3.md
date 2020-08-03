@@ -1,6 +1,6 @@
 ---
 title: 'Hide & Seek World'
-image: 'images/Hide&Seek.jpg'
+image: 'Hide&Seek.jpg'
 backgroundColor: '#0D1C26'
 tags:
     [

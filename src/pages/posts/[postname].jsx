@@ -1,6 +1,7 @@
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import Backdrop from '../../components/Backdrop/Backdrop'
+import Link from 'next/link'
 import classes from '../../pages-lib/posts/post.module.scss'
 
 import Layout from '../../components/Layout/Layout'
@@ -10,14 +11,23 @@ export default function BlogPost({
 	frontmatter,
 	markdownBody,
 	description,
+	postname,
 }) {
 	if (!frontmatter) return <></>
 
 	return (
 		<>
-			<Backdrop {...{ image: frontmatter.image }} />
+			<Backdrop {...{ image: 'posts/' + postname + '-large.jpg' }} />
 			<Layout
-				{...{ isWhite: true }}
+				{...{
+					headerColor: '#b3bac5',
+					rightLinks: null,
+					leftLink: (
+						<Link href="/blog">
+							<a>Back to Articles</a>
+						</Link>
+					),
+				}}
 				pageTitle={`${siteTitle} | ${frontmatter.title}`}
 				className={classes.layout}
 				description={description}
@@ -44,6 +54,7 @@ export async function getStaticProps({ params }) {
 			frontmatter: data.data,
 			markdownBody: data.content,
 			description: config.default.description,
+			postname: postname,
 		},
 	}
 }
