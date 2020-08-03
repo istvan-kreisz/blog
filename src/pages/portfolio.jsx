@@ -92,7 +92,7 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 								UIKit, SwiftUI, Realm, Core Data, Unit, UI
 								tests, Circle CI, Fastlane, AWS Cognito, AWS
 								Amplify, Push Notifications, SpriteKit,
-								Firebase, MVC, MVVM, MVVM-C
+								Firebase, MVC, MVVM, MVVM-C, Redux
 							</span>
 							.
 						</p>
