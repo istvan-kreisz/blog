@@ -33,10 +33,7 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 	return (
 		<>
 			<Backdrop className={classes.backdrop} />
-			<Layout
-				pageTitle={`${title} | Portfolio`}
-				description={description}
-			>
+			<Layout pageTitle={`${title} | Projects`} description={description}>
 				<section className={classes.header}>
 					<div className={classes.titlebar}>
 						<h1 className={classes.title}>Projects</h1>
