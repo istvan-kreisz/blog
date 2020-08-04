@@ -27,6 +27,11 @@ body {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: $color-info;
+	font-weight: 700;
 	cursor: pointer;
+
+	* {
+		font-weight: initial;
+	}
 }

@@ -4,7 +4,12 @@ import ReactMarkdown from 'react-markdown'
 const ProjectCard = (props) => {
 	return (
 		<li className={classes.projectCard} key={props.index}>
-			<a className={classes.container} href={props.link}>
+			<div
+				onClick={() => {
+					window.location = props.link
+				}}
+				className={classes.container}
+			>
 				<img
 					className={
 						props.index % 2 == 0 ? null : classes.rightAligned
@@ -24,7 +29,7 @@ const ProjectCard = (props) => {
 					<div className={classes.spacer}></div>
 					<p className={classes.date}>{props.date}</p>
 				</div>
-			</a>
+			</div>
 		</li>
 	)
 }

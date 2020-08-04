@@ -21,6 +21,7 @@
 		$orientation-change-width: 850px;
 		display: flex;
 		flex-direction: column;
+		cursor: pointer;
 
 		@include min-width($orientation-change-width) {
 			flex-direction: row;
@@ -63,6 +64,10 @@
 				color: $color-gray;
 				margin-top: 0;
 				line-height: 1.4;
+			}
+
+			strong {
+				font-weight: 700;
 			}
 
 			.spacer {

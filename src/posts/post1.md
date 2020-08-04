@@ -67,7 +67,7 @@ Before I started writing this blog I already dabbled with some small projects an
 
 #### Works
 
--   This website which is essentially just a fork of a Jekyll theme [reverie](https://github.com/amitmerchant1990/reverie) with some modifications
+-   ~~This website which is essentially just a fork of a Jekyll theme [reverie](https://github.com/amitmerchant1990/reverie) with some modifications~~ (UPDATE: this refers to my previous site, which since then I've taken down)
 -   My old website which is no longer live. That one I actually built from scratch but I needed something more extensible so I pulled the plug on it.
 -   All the assignments for the courses I took
 
@@ -92,10 +92,10 @@ Besides all these course, I plan to build some sites from scratch as I go along 
 
 #### Other resources
 
--   syntax.fm: A great podcast about all web dev related things.
+-   [syntax.fm](https://syntax.fm): A great podcast about all web dev related things.
 -   [Effective_Engineer.md · GitHub](https://gist.github.com/rondy/af1dee1d28c02e9a225ae55da2674a6f): Very good notes on how to maximize your potential as an engineer. I read this every so often to check myself if I’m on the right track or I need some adjustment.
 -   [Learn to become a modern frontend developer](https://roadmap.sh/frontend): A very nicely put together roadmap for learning front end development. This was a major inspiration for my learning plan too.
--   There will probably be lots of other sources, like documentations, articles etc. that I’ll use if I need some more clarification on something.
+-   There will probably be lots of other resources, like documentations, articles etc. that I’ll use if I need some more clarification on something.
 
 ## Let’s get to it!
 

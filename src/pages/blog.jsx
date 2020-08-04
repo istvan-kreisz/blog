@@ -46,7 +46,12 @@ const Index = ({ articles, title, description }) => {
 						image: article.frontmatter.image,
 						slug: article.slug,
 					}
-					return <ArticleCard {...cardProps}></ArticleCard>
+					return (
+						<ArticleCard
+							key={article.slug}
+							{...cardProps}
+						></ArticleCard>
+					)
 				})
 		} else {
 			return null
