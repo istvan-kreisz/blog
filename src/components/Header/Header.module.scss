@@ -48,6 +48,10 @@
 	margin-top: $padding-vertical-sm;
 	margin-bottom: $padding-vertical-sm;
 
+	a {
+		font-weight: 600;
+	}
+
 	& > * {
 		font-size: 1.2rem;
 		&:active,
