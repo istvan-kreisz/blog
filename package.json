@@ -13,7 +13,7 @@
 		"@fortawesome/free-brands-svg-icons": "^5.14.0",
 		"@fortawesome/free-solid-svg-icons": "^5.14.0",
 		"@fortawesome/react-fontawesome": "^0.1.11",
-		"firebase": "^7.17.1",
+		"firebase": "^7.17.2",
 		"gray-matter": "^4.0.2",
 		"modern-normalize": "^0.7.0",
 		"next": "9.4.2",
