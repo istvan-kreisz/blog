@@ -1,7 +1,7 @@
 ---
 title: 'My web development learning plan'
 description: ''
-tags: [web, productivity]
+tags: [web]
 date: 'March 2020'
 ---
 
