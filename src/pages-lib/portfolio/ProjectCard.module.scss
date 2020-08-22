@@ -27,11 +27,10 @@
 			flex-direction: row;
 		}
 
-		img {
-			flex-basis: 200px;
-			width: 100%;
+		.imageWrapper {
+			$img-height: 200px;
+			flex-basis: $img-height;
 			overflow: hidden;
-			object-fit: contain;
 
 			&.rightAligned {
 				@include min-width($orientation-change-width) {
@@ -41,7 +40,16 @@
 
 			@include min-width($orientation-change-width) {
 				flex-basis: 30%;
-				height: auto;
+			}
+
+			img {
+				width: 100%;
+				object-fit: contain;
+				height: $img-height;
+
+				@include min-width($orientation-change-width) {
+					height: 100%;
+				}
 			}
 		}
 

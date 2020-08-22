@@ -74,8 +74,8 @@ const About = ({ title, description }) => {
 							<h5>Location</h5>
 							<p>Berlin, Germany</p>
 							<h5>Phone</h5>
-							<a href="tel:+36308224417">
-								<p>+36308224417</p>
+							<a href="tel:+13344876154">
+								<p>+13344876154</p>
 							</a>
 							<h5>Email</h5>
 							<a href="mailto: hello@istvan-kreisz.com">

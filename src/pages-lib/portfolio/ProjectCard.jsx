@@ -10,14 +10,18 @@ const ProjectCard = (props) => {
 				}}
 				className={classes.container}
 			>
-				<img
+				<div
 					className={
-						props.index % 2 == 0 ? null : classes.rightAligned
+						classes.imageWrapper +
+						(props.index % 2 == 0 ? '' : ' ' + classes.rightAligned)
 					}
-					style={{ backgroundColor: props.backgroundColor }}
-					src={'images/projects/' + props.image}
-					alt=""
-				/>
+				>
+					<img
+						style={{ backgroundColor: props.backgroundColor }}
+						src={'images/projects/' + props.image}
+						alt=""
+					/>
+				</div>
 				<div className={classes.projectContent}>
 					<ul className={classes.techList}>
 						{props.tags.map((element) => {
