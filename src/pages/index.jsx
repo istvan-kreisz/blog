@@ -72,7 +72,7 @@ const About = ({ title, description }) => {
 						<div className={classes.personalDetails}>
 							<h4>Personal details:</h4>
 							<h5>Location</h5>
-							<p>Berlin, Germany</p>
+							<p>NYC, New York</p>
 							<h5>Phone</h5>
 							<a href="tel:+13344876154">
 								<p>+13344876154</p>
