@@ -85,7 +85,7 @@ const Index = ({ articles, title, description }) => {
 						<h1>Welcome to my blog!</h1>
 						<p>
 							I share random tidbits about my journey as a
-							developer (web and iOS) & product creator.
+							developer (iOS and web) & product creator.
 						</p>
 						<div className={classes.searchBar}>
 							<label htmlFor="searchbar">Search Bar</label>
