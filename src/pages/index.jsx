@@ -111,16 +111,17 @@ const About = ({ title, description }) => {
 						millions of downloads.
 						<br />
 						<br />
-						Recently I've shifted my focus from iOS to web
-						development in order to grow my skillset and
-						(eventually) become a full-stack developer. Check out
+						Recently I took up web development (alongside iOS
+						development) in order to grow my skillset and develop a
+						more extensive knowledge of the full stack. Check out
 						some of my works <a href="/projects">here</a>.
 						<br />
 						<br />
 						If you’re interested in my journey, check out my{' '}
-						<a href="/blog">blog</a> or follow me on Twitter where
-						I’ll be posting regular updates. If you want to get in
-						touch, you can reach me at:
+						<a href="/blog">blog</a> or follow me on{' '}
+						<a href={process.env.twitter}>Twitter</a> where I’ll be
+						posting regular updates. If you want to get in touch,
+						you can reach me at:
 						<a
 							className={classes.email}
 							href="mailto:hello@istvan-kreisz.com"

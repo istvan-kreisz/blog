@@ -18,6 +18,9 @@
 # misc
 .DS_Store
 
+# drafts
+/src/post-drafts
+
 # debug
 npm-debug.log*
 yarn-debug.log*
