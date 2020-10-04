@@ -21,6 +21,22 @@
 		line-height: 1.6;
 	}
 
+	img {
+		display: block;
+		width: 70%;
+		margin: 4rem auto;
+	}
+
+	img + p {
+		color: red;
+	}
+
+	h2 > a {
+		margin-top: 4rem;
+		display: block;
+		text-align: center;
+	}
+
 	@include min-width() {
 		margin-top: 20rem;
 	}

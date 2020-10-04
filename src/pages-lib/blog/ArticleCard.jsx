@@ -9,7 +9,11 @@ const ArticleCard = (props) => {
 					<div className={classes.imageContainer}>
 						<img
 							src={
-								'images/posts/' + props.slug + '-thumbnail.jpg'
+								'images/posts/' +
+								props.slug +
+								'/' +
+								props.slug +
+								'-thumbnail.jpg'
 							}
 							alt=""
 						/>

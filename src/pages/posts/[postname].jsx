@@ -17,7 +17,11 @@ export default function BlogPost({
 
 	return (
 		<>
-			<Backdrop {...{ image: 'posts/' + postname + '-large.jpg' }} />
+			<Backdrop
+				{...{
+					image: 'posts/' + postname + '/' + postname + '-large.jpg',
+				}}
+			/>
 			<Layout
 				{...{
 					headerColor: '#b3bac5',

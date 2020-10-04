@@ -19,4 +19,8 @@
     <loc>https://istvan-kreisz.com/posts/post2</loc>
     <changefreq>hourly</changefreq>
   </url>
+  <url>
+    <loc>https://istvan-kreisz.com/posts/post3</loc>
+    <changefreq>hourly</changefreq>
+  </url>
 </urlset>
