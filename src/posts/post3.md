@@ -30,7 +30,7 @@ The concept is similar to the popular children's game, hence the name. The excep
 
 ## Game modes
 
-There's 2 game modes: Street View and Satellite. In Street View mode you hide by selecting a street view location somewhere and in Satellite mode you're hiding spot is a zoomed in rectangular area on the surface of Earth. In Street View mode you need to be able to read visual cues about architectural styles, vegetation, people etc. to guess well, while Satellite mode relies more on your geographical knowledge.
+There's 2 game modes: Street View and Satellite. In Street View mode you hide by selecting a street view location somewhere and in Satellite mode your hiding spot is a zoomed in rectangular area on the surface of Earth. In Street View mode you need to be able to read visual cues about architectural styles, vegetation, people etc. to guess well, while Satellite mode relies more on your geographical knowledge.
 
 You can also create a private room and play against your friends, where you can customize more things like: how much time you have to make a guess or restrict the map to only certain countries.
 
