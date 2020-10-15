@@ -22,9 +22,13 @@ In [Hide & Seek World](https://hideandseek.world) you're up against real players
 The game consists of a few turns, and in each turn there's one hider who selects a location somewhere in the world, and 1-5 seekers who try to guess the location based on Google Street View images.
 As a hider your goal is hide well because the better seekers are able to guess your location the less points you get. As a seeker you get more points if you guess better.
 
-The concept is similar to the popular children's game, hence the name. The exception is that you have a bigger playground here, the whole world.
+![screenshot1](/images/posts/post3/screenshot1.jpg)
 
-## Game Modes
+The concept is similar to the popular children's game, hence the name. The exception is that you have a bigger playground here, the whole world. At the end of each round you can see the guesses of all the players and how far everyone was from the actual hiding place.
+
+![screenshot2](/images/posts/post3/screenshot3.jpg)
+
+## Game modes
 
 There's 2 game modes: Street View and Satellite. In Street View mode you hide by selecting a street view location somewhere and in Satellite mode you're hiding spot is a zoomed in rectangular area on the surface of Earth. In Street View mode you need to be able to read visual cues about architectural styles, vegetation, people etc. to guess well, while Satellite mode relies more on your geographical knowledge.
 
