@@ -8,3 +8,5 @@ link: 'https://apps.apple.com/us/app/draw-it-fill-in-the-shapes/id1508860259'
 ---
 
 A simple, fun game for iOS where you have to fill in the given shapes as accurately as you can. It has over 100 completable levels, and it was written in [SwiftUI](https://developer.apple.com/xcode/swiftui/).
+
+Draw It was featured in this [article](https://gameskeys.net/most-relaxing-games-to-play-on-your-ios-devices/).
