@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
 				>
 					<img
 						style={{ backgroundColor: props.backgroundColor }}
-						src={'images/projects/' + props.image}
+						src={props.image && 'images/projects/' + props.image}
 						alt=""
 					/>
 				</div>
