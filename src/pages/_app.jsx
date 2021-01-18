@@ -1,6 +1,7 @@
 import './styles/styles.scss'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import { useEffect } from 'react'
 
 import firebase from 'firebase/app'
 import 'firebase/analytics'
@@ -21,5 +22,8 @@ if (!firebase.apps.length) {
 library.add(fab)
 
 export default function App({ Component, pageProps }) {
+	useEffect(() => {
+		firebase.analytics()
+	}, [])
 	return <Component {...pageProps} />
 }
