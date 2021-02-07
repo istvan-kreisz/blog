@@ -9,12 +9,13 @@ const Index = ({ articles, title, description }) => {
 	const [searchTerm, setSearchTerm] = useState('')
 	const [filters, setFilters] = useState([])
 
-	const articleTags = ['web', 'ios', 'productivity']
+	const articleTags = ['web', 'ios']
 
 	const generateCards = (articles, searchTerm, filters) => {
 		if (articles && articles.length > 0) {
 			return articles
 				.filter((article) => {
+					console.log(article)
 					const matchesTitle =
 						article &&
 						article.frontmatter &&
