@@ -15,7 +15,7 @@ Everyone who even just loosely follows american news must have heard of the craz
 
 Okay, I admit calling [WeLikeTheStock.live](https://welikethestock.live) a stock analytics site is a bit generous for this ridiculous looking meme-themed site. My goal was not to build a [Yahoo Finance](https://finance.yahoo.com/) competitor, but be a small part of this historic movement and build something that can bring a smile to some disgruntled Reddit investors' faces.
 
-![The GameStop rally](/images/posts/post4/post4-thumbnail.jpg)
+![We Like The Stock](/images/posts/post4/post4-thumbnail.jpg)
 
 ## Web scraping, serverless functions and serverless database
 
