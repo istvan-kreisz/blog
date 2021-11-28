@@ -14,6 +14,7 @@ const About = ({ title, description }) => {
 						<div className={classes.titlebar}>
 							{/* <h1 className="title">Hi, I'm Istvan!</h1>
 							<h2>iOS and Web Developer</h2> */}
+							<h2>Test</h2>
 						</div>
 
 						<p>
