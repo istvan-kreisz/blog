@@ -45,6 +45,32 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 				</section>
 				<section className={classes.projects}>
 					<div className={classes.sectionTitle}>
+						<h2>Web Development</h2>
+						<p>
+							After years of iOS development I decided to learn
+							more about the full stack so I dove into web
+							development. After acquiring the foundational skills
+							of <span>frontend</span> web dev (
+							<span>HTML, CSS, JS</span>), as well as learning my
+							frontend framework of choice, <span>React</span>.
+							Besides that I've been using{' '}
+							<span>Firebase services</span> (authentication,
+							analytics, database, hosting),{' '}
+							<span>SSG (Next.js) </span>and{' '}
+							<span>
+								serverless functions (Google Cloud Functions)
+							</span>{' '}
+							extensively in my projects. Also, I've taken my
+							first steps in learning <span>Node.js</span>.
+						</p>
+					</div>
+					{webProjectList ? (
+						<ul className={classes.projectList}>
+							{webProjectList}
+						</ul>
+					) : null}
+
+					<div className={classes.sectionTitle}>
 						<h2>iOS Development</h2>
 						<p>
 							I started iOS development in my final year in
@@ -71,32 +97,6 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 					{iosProjectList ? (
 						<ul className={classes.projectList}>
 							{iosProjectList}
-						</ul>
-					) : null}
-					<div className={classes.sectionTitle}>
-						<h2>Web Development</h2>
-						<p>
-							I recently took up web development after about 2
-							years of professional iOS development. I can safely
-							say I fell in love with the platform. I've been
-							mainly focusing on acquiring the foundational skills
-							of <span>frontend</span> web dev (
-							<span>HTML, CSS, JS</span>), as well as learning my
-							frontend framework of choice, <span>React</span>.
-							Besides that I've been using{' '}
-							<span>Firebase services</span> (authentication,
-							analytics, database, hosting),{' '}
-							<span>SSG (Next.js) </span>and{' '}
-							<span>
-								serverless functions (Google Cloud Functions)
-							</span>{' '}
-							extensively in my projects. Also, I've taken my
-							first steps in learning <span>Node.js</span>.
-						</p>
-					</div>
-					{webProjectList ? (
-						<ul className={classes.projectList}>
-							{webProjectList}
 						</ul>
 					) : null}
 				</section>
