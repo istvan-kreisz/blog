@@ -1,23 +1,19 @@
 ---
-title: 'Hide & Seek World'
-image: 'Hide&Seek.jpg'
-backgroundColor: '#0D1C26'
+title: 'CopDeck'
+image: 'CopDeck.png'
+backgroundColor: '#FFFFFF'
 tags:
     [
+        Firebase,
+        Google Cloud serverless functions,
+        web scraping,
         React,
         Next.js,
-        Netlify,
-        Firebase Auth,
-        Firebase Database,
-        Google Cloud Functions,
-        Stripe Checkout,
-        Google Maps JS API,
-        Sentry,
+        TypeScript,
+        Electron,
     ]
-date: 'June 2020 - '
-link: 'https://hideandseek.world'
+date: 'Apr 2021 - Apr 2022'
+link: 'https://copdeck.com'
 ---
 
-An online multiplayer game inspired by the popular geography quiz game [GeoGuessr](https://www.geoguessr.com/). In **Hide & Seek World** you're up against 2-19 players and your playground is the world map. In each turn someone "hides" somewhere by selecting a (Google) Street View location. The other players have to locate the hider based on the Street View image. The closer your guess is to the actual location the more points you get. The frontend was built with **Next.js** and **React** and the backend with **Google Cloud Functions**. It has a premium membership option and payments are processed with **Stripe**.
-
-Hide & Seek World has been under active development **since June 2020** and it has **close to a thousand daily users**.
+**CopDeck** is one of my most ambitious projects to date. It's a sneaker inventory manager and price comparison app with lots of built-in features. The backend is built wih **Google Cloud** technologies and the price comparison data is gathered by **web scraping**. The [landing page](https://copdeck.com) is built with **React, TypeScript, Next.js** and **Tailwind**. The project also included a **Google Chrome extension** and desktop app built with **Electron** (they are no longer publicly available).

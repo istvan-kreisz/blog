@@ -48,14 +48,23 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 						<h2>iOS Development</h2>
 						<p>
 							I started iOS development in my final year in
-							college. The well-designed and user-friendly
-							interfaces of iOS apps got me interested and once I
-							put together my first simple app I was hooked. I
-							spent the next 2 years learning the ins and outs of
-							iOS / software development, building apps in my free
-							time, working a full-time iOS development job and
-							even co-founding an iOS game development company.
-							I've used various different technologies &
+							college. The well-designed interfaces of iOS apps
+							got me interested and once I put together my first
+							app I was hooked. During my time as an iOS developer
+							I've <span>worked for 2 startups</span> as an iOS
+							developer, I <span>co-founded</span> my own (rather
+							short-lived) iOS game development company,{' '}
+							<span>
+								built, designed and released 9 apps from scratch
+							</span>{' '}
+							and even started my own business and{' '}
+							<span>built a complex consumer product from 0</span>
+							. As a developer I put a lot of emphasis on creating
+							clean, modularized code with a{' '}
+							<span>
+								well-structured and scalable architectures
+							</span>
+							. I've used various different technologies &
 							frameworks in my work as an app developer, some of
 							the most notable ones:{' '}
 							<span>
@@ -76,22 +85,18 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 					<div className={classes.sectionTitle}>
 						<h2>Web Development</h2>
 						<p>
-							I recently took up web development after about 2
-							years of professional iOS development. I can safely
-							say I fell in love with the platform. I've been
-							mainly focusing on acquiring the foundational skills
-							of <span>frontend</span> web dev (
-							<span>HTML, CSS, JS</span>), as well as learning my
-							frontend framework of choice, <span>React</span>.
-							Besides that I've been using{' '}
-							<span>Firebase services</span> (authentication,
-							analytics, database, hosting),{' '}
-							<span>SSG (Next.js) </span>and{' '}
-							<span>
-								serverless functions (Google Cloud Functions)
-							</span>{' '}
-							extensively in my projects. Also, I've taken my
-							first steps in learning <span>Node.js</span>.
+							I've been doing web development for 2-3 years. My
+							primary focus has been frontend development with{' '}
+							<span>React, TypeScript and Next.js</span>, as well
+							as backend development with{' '}
+							<span>Google Cloud (and Firebase)</span> serverless
+							technologies. Since I started web development, I
+							built 2 consumer products from the ground up:{' '}
+							<a href="https://copdeck.com">CopDeck</a> and{' '}
+							<a href="https://hideandseek.world">
+								Hide & Seek World
+							</a>
+							.
 						</p>
 					</div>
 					{webProjectList ? (

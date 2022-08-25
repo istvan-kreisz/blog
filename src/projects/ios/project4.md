@@ -1,12 +1,10 @@
 ---
-title: 'Draw It'
-image: 'DrawIt.jpg'
-backgroundColor: '#28B0E6'
-tags: [SwiftUI]
-date: 'April 2020'
-link: 'https://apps.apple.com/us/app/draw-it-fill-in-the-shapes/id1508860259'
+title: 'SidelineSwap'
+image: 'Sidelineswap.png'
+backgroundColor: '#FFFFFF'
+tags: [Swift, UIKit]
+date: 'Oct 2021 - July 2022'
+link: 'https://www.sidelineswap.com'
 ---
 
-A simple, fun game for iOS where you have to fill in the given shapes as accurately as you can. It has over 100 completable levels, and it was written in [SwiftUI](https://developer.apple.com/xcode/swiftui/).
-
-Draw It was featured in this [article](https://gameskeys.net/most-relaxing-games-to-play-on-your-ios-devices/).
+I worked as an iOS developer for the Boston-based ecommerce startup, **SidelineSwap**. It was a great learning experience, where I started as part of a 2 person team and later fully took over the development of the application. My work mostly consisted of modernizing the UI of the application, improving the software architecture of the codebase as well as refactoring and bug fixing legacy code.
