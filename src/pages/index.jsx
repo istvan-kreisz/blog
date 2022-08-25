@@ -93,35 +93,29 @@ const About = ({ title, description }) => {
 						electrical engineer in 2017 only to realize that my true
 						passion was software development. So I did a bit of a
 						career change and taught myself as much as I could about
-						programming over the course of the next couple years.
+						programming over the course of the next couple of years.
 						<br />
-						<br />I started my career as an iOS developer, where I
-						made some{' '}
-						<a href="https://apps.apple.com/us/developer/istvan-kreisz/id1279423840">
-							apps
-						</a>{' '}
-						on my own, worked a full time{' '}
-						<a href="https://www.labtwin.com/">job</a> in Berlin and
-						was the co-founder and lead developer of a company
+						<br />I started my career as an iOS developer. I worked
+						as an iOS developer for 2 startups (
+						<a href="https://www.labtwin.com/">LabTwin</a> and{' '}
+						<a href="https://www.sidelineswap.com/">SidelineSwap</a>
+						) and was the co-founder and lead developer of a company
 						creating a{' '}
 						<a href="https://apps.apple.com/us/app/ball-smasher/id1381559021">
 							game
 						</a>{' '}
 						that reached the #2 spot on the US App Store and got
-						millions of downloads.
+						millions of downloads. More recently I learned some web
+						development and built and launched two products:{' '}
+						<a href="https://copdeck.com">CopDeck</a>, a sneaker
+						inventory manager and price comparison app, and{' '}
+						<a href="https://hideandseek.world">
+							Hide & Seek World
+						</a>
+						, a multiplayer online game.
 						<br />
 						<br />
-						Recently I took up web development (alongside iOS
-						development) in order to grow my skillset and develop a
-						more extensive knowledge of the full stack. Check out
-						some of my works <a href="/projects">here</a>.
-						<br />
-						<br />
-						If you’re interested in my journey, check out my{' '}
-						<a href="/blog">blog</a> or follow me on{' '}
-						<a href={process.env.twitter}>Twitter</a> where I’ll be
-						posting regular updates. If you want to get in touch,
-						you can reach me at:
+						If you want to get in touch, you can reach me at:
 						<a
 							className={classes.email}
 							href="mailto:hello@istvan-kreisz.com"
