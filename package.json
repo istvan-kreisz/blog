@@ -16,7 +16,7 @@
 		"firebase": "^7.24.0",
 		"gray-matter": "^4.0.2",
 		"modern-normalize": "^0.7.0",
-		"next": "^10.0.3",
+		"next": "^12.1.0",
 		"raw-loader": "^4.0.2",
 		"react": "16.13.1",
 		"react-dom": "16.13.1",
