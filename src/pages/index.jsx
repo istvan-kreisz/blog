@@ -13,25 +13,47 @@ const About = ({ title, description }) => {
 					<section className={classes.main}>
 						<div className={classes.titlebar}>
 							<h1 className="title">Hi, I'm Istvan!</h1>
-							<h2>iOS and Web Developer</h2>
+							<h2>Freelance iOS and Web Developer</h2>
 						</div>
 
 						<p>
-							Lifelong learner & creator. I love technology. But
-							what really gets me going is working on meaningful
-							products, especially if they can make me a
-							millionaire one day. <br /> Check out my bio below
-							or visit the{' '}
+							Lifelong learner and creator. I love coding and
+							technology. But what really gets me going is working
+							on products that have a purpose, or products that
+							just make people happy.
+							<br />
+							<br />
+							I've worked on various different iOS and web
+							projects ranging from simple{' '}
+							<a href="https://apps.apple.com/us/app/ball-smasher/id1381559021">
+								time-waster games
+							</a>{' '}
+							to an advanced laboratory{' '}
+							<a href="https://www.labtwin.com/">
+								voice assistant application
+							</a>{' '}
+							and many others in between.
+							<br />
+							<br />
+							Recently I started working as a freelance iOS and
+							web developer. My 5+ years of experience of working
+							on a wide range of products means that whatever you
+							have in mind I can probably build it. Check out the{' '}
 							<Link href="/projects">
 								<a>Projects</a>
 							</Link>{' '}
-							page to see my past works.
+							page to see some of my past works.
 							<br />
-							For stories about software development & building
-							products, visit my
-							<Link href="/blog">
-								<a> Blog</a>
-							</Link>
+							<br />
+							If you want to hire me or just get in touch, you can
+							reach me at:
+							<a
+								className={classes.email}
+								href="mailto:hello@istvan-kreisz.com"
+							>
+								hello@istvan-kreisz.com
+							</a>
+							or any of the social media links below.
 							{''}.
 						</p>
 					</section>
@@ -74,8 +96,8 @@ const About = ({ title, description }) => {
 							<h5>Location</h5>
 							<p>NYC, New York</p>
 							<h5>Phone</h5>
-							<a href="tel:+36308224417">
-								<p>+36308224417</p>
+							<a href="tel:+13479412889">
+								<p>+1 (347) 941-2889</p>
 							</a>
 							<h5>Email</h5>
 							<a href="mailto: hello@istvan-kreisz.com">
@@ -88,12 +110,12 @@ const About = ({ title, description }) => {
 					<h3>A little about me:</h3>
 					<p>
 						I'm Hungarian-American dual citizen, born in the US but
-						grew up in Hungary. After high school I decided to move
-						to the US to do my studies there. I graduated as an
-						electrical engineer in 2017 only to realize that my true
-						passion was software development. So I did a bit of a
-						career change and taught myself as much as I could about
-						programming over the course of the next couple of years.
+						grew up in Hungary. After high school I moved to the US
+						to do my studies there. I graduated as an electrical
+						engineer in 2017 only to realize that my true passion
+						was software development. So I did a bit of a career
+						change and took a deep dive into the world of softtware
+						development.
 						<br />
 						<br />I started my career as an iOS developer. I worked
 						as an iOS developer for 2 startups (
@@ -105,24 +127,21 @@ const About = ({ title, description }) => {
 							game
 						</a>{' '}
 						that reached the #2 spot on the US App Store and got
-						millions of downloads. More recently I learned some web
-						development and built and launched two products:{' '}
-						<a href="https://copdeck.com">CopDeck</a>, a sneaker
-						inventory manager and price comparison app, and{' '}
+						millions of downloads. More recently I learned web
+						development and degined, built and launched two
+						products: <a href="https://copdeck.com">CopDeck</a>, a
+						sneaker inventory manager and price comparison app, and{' '}
 						<a href="https://hideandseek.world">
 							Hide & Seek World
 						</a>
-						, a multiplayer online game.
+						, an online multiplayer game.
 						<br />
-						<br />
-						If you want to get in touch, you can reach me at:
-						<a
-							className={classes.email}
-							href="mailto:hello@istvan-kreisz.com"
-						>
-							hello@istvan-kreisz.com
-						</a>
-						or any of the social media links below.
+						<br />I always keep learning because software
+						development is a very fast changing world, where you
+						must keep up with the latest technologies and trends.
+						Besides my passion for coding I'm a huge fan of history
+						and an avid traveler, having travelled in Latin America,
+						North America, Asia and Europe.
 					</p>
 				</section>
 			</Layout>

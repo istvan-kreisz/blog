@@ -58,9 +58,11 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 								built, designed and released 9 apps from scratch
 							</span>{' '}
 							and even started my own business and{' '}
-							<span>built a complex consumer product from 0</span>
+							<span>
+								built a complex consumer product from zero
+							</span>
 							. As a developer I put a lot of emphasis on creating
-							clean, modularized code with a{' '}
+							clean, modularized code with{' '}
 							<span>
 								well-structured and scalable architectures
 							</span>
