@@ -13,7 +13,7 @@ const About = ({ title, description }) => {
 					<section className={classes.main}>
 						<div className={classes.titlebar}>
 							<h1 className="title">Hi, I'm Istvan!</h1>
-							<h2>Freelance iOS and Web Developer</h2>
+							<h2>iOS and Web Developer</h2>
 						</div>
 
 						<p>
@@ -35,10 +35,8 @@ const About = ({ title, description }) => {
 							and many others in between.
 							<br />
 							<br />
-							Recently I started working as a freelance iOS and
-							web developer. My 5+ years of experience of working
-							on a wide range of products means that whatever you
-							have in mind I can probably build it. Check out the{' '}
+							Recently I've been workin as an independent iOS and
+							web developer. Check out the{' '}
 							<Link href="/projects">
 								<a>Projects</a>
 							</Link>{' '}
