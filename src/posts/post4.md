@@ -13,7 +13,7 @@ Everyone who even just loosely follows american news must have heard of the craz
 
 ## We Like The Stock!
 
-Okay, I admit calling [WeLikeTheStock.live](https://welikethestock.live) a stock analytics site is a bit generous for this ridiculous looking meme site. My goal was not to build a [Yahoo Finance](https://finance.yahoo.com/) competitor, but be a small part of this historic movement and build something that can bring a smile to some disgruntled Reddit investors' faces.
+Okay, I admit calling [WeLikeTheStock.live](https://welikethestock.vercel.app) a stock analytics site is a bit generous for this ridiculous looking meme site. My goal was not to build a [Yahoo Finance](https://finance.yahoo.com/) competitor, but be a small part of this historic movement and build something that can bring a smile to some disgruntled Reddit investors' faces.
 
 ![We Like The Stock](/images/posts/post4/post4-thumbnail.jpg)
 
@@ -38,4 +38,4 @@ The serverless function itself does the following:
 
 And that's how you build a site using web scraping and serverless functions in no time! While this toolset would not scale well for larger applications, it's best not to overcomplicate things when all we want is a simple website that will break America's financial system.
 
-## [Go check it out now!](https://welikethestock.live)
+## [Go check it out now!](https://welikethestock.vercel.app)
