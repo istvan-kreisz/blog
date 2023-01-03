@@ -17,22 +17,43 @@ const About = ({ title, description }) => {
 						</div>
 
 						<p>
-							Lifelong learner and creator. I love coding and
-							technology. But what really gets me going is working
-							on products that have a purpose, or products that
-							just make people happy.
+							I've got experience working for startups and as an
+							indie developer. I love new challenges and learning
+							new things. I put a strong emphasis on{' '}
+							<strong>
+								maintainable, elegant software architecture and
+								world-class UI design
+							</strong>{' '}
+							in all my work.
 							<br />
 							<br />
-							I've worked on various different iOS and web
-							projects ranging from simple{' '}
-							<a href="https://apps.apple.com/us/app/ball-smasher/id1381559021">
-								time-waster games
-							</a>{' '}
-							to an advanced laboratory{' '}
-							<a href="https://www.labtwin.com/">
-								voice assistant application
-							</a>{' '}
-							and many others in between.
+							Besides my extensive experience as an iOS developer,
+							I've gained experience in all stages of product
+							creation as a solo developer, including:{' '}
+							<strong>
+								iOS, frontend and backend development, UI & UX
+								design, product management
+							</strong>
+							.
+							<br />
+							<br />I enjoy working in fast-paced environments
+							where creativity and ownership mindset are
+							encouraged and software development principles are
+							followed. I have experience working with{' '}
+							<strong>
+								iOS, Firebase, Google Cloud, React, Next.js,
+								Typescript, web scraping.
+							</strong>{' '}
+							I like to stay up to date on the latest technologies
+							and I enjoy developing new skills. Recently I
+							started learning React Native development.
+							<br />
+							<br />
+							Outside of work I love reading about history,
+							geopolitics and technology. I'm an avid traveler,
+							I've traveled in North America, Latin America,
+							Europe and Asia. I love meeting new people and
+							experiencing different cultures.
 							<br />
 							<br />
 							Recently I've been working as an independent iOS and
@@ -104,44 +125,6 @@ const About = ({ title, description }) => {
 						</div>
 					</section>
 				</div>
-				<section className={classes.bio}>
-					<h3>A little about me:</h3>
-					<p>
-						I'm Hungarian-American dual citizen, born in the US but
-						grew up in Hungary. After high school I moved to the US
-						to do my studies there. I graduated as an electrical
-						engineer in 2017 only to realize that my true passion
-						was software development. So I did a bit of a career
-						change and took a deep dive into the world of softtware
-						development.
-						<br />
-						<br />I started my career as an iOS developer. I worked
-						as an iOS developer for 2 startups (
-						<a href="https://www.labtwin.com/">LabTwin</a> and{' '}
-						<a href="https://www.sidelineswap.com/">SidelineSwap</a>
-						) and was the co-founder and lead developer of a company
-						creating a{' '}
-						<a href="https://apps.apple.com/us/app/ball-smasher/id1381559021">
-							game
-						</a>{' '}
-						that reached the #2 spot on the US App Store and got
-						millions of downloads. More recently I learned web
-						development and degined, built and launched two
-						products: <a href="https://copdeck.com">CopDeck</a>, a
-						sneaker inventory manager and price comparison app, and{' '}
-						<a href="https://hideandseek.world">
-							Hide & Seek World
-						</a>
-						, an online multiplayer game.
-						<br />
-						<br />I always keep learning because software
-						development is a very fast changing world, where you
-						must keep up with the latest technologies and trends.
-						Besides my passion for coding I'm a huge fan of history
-						and an avid traveler, having travelled in Latin America,
-						North America, Asia and Europe.
-					</p>
-				</section>
 			</Layout>
 		</>
 	)
