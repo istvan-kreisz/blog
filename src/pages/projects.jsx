@@ -52,9 +52,13 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 							iOS developer, <span>co-founded</span> an iOS game
 							development company and I{' '}
 							<span>
-								built, designed and released 9 apps from scratch
+								built, designed and released 9 apps from
+								scratch.
 							</span>
-							. I have experience with the following technologies:{' '}
+							<br />
+							<br />
+							Skills:
+							<br />
 							<span>
 								Swift, UIKit, SwiftUI, SpriteKit, Realm, Core
 								Data, RxSwift, Combine, REST API, MVC, MVVM-C,
@@ -62,7 +66,6 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 								Git, GitHub, Asynchronous programming,
 								Bitbucket, Sketch, Figma
 							</span>
-							.
 						</p>
 					</div>
 					{iosProjectList ? (
@@ -77,15 +80,20 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 							primary focus has been frontend development with{' '}
 							<span>React, TypeScript and Next.js</span>, as well
 							as backend development with{' '}
-							<span>Google Cloud (and Firebase)</span> serverless
-							technologies. Since I started web development, I
-							built 2 consumer products from the ground up:{' '}
-							<a href="https://copdeck.com">CopDeck</a> and{' '}
-							<a href="https://hideandseek.world">
-								Hide & Seek World
-							</a>
-							, which have had <span>more than 100k users</span>{' '}
-							to date.
+							<span>Firebase and Google Cloud</span>. Since I
+							started web development, I designed and built 2
+							complex consumer products and several other websites
+							from scratch.
+							<br />
+							<br />
+							Skills:
+							<br />
+							<span>
+								HTML, (S)CSS, Tailwind, JavaScript, TypeScript,
+								React, Next.js, Google Cloud, Firebase, Google
+								Analytics, Web Scraping, Serverless Computing,
+								Netlify, Vercel, Stripe, Google Maps API
+							</span>
 						</p>
 					</div>
 					{webProjectList ? (

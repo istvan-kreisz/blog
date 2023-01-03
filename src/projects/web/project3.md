@@ -16,4 +16,4 @@ date: 'Apr 2021 - Apr 2022'
 link: 'https://copdeck.com'
 ---
 
-**CopDeck** is one of my most ambitious projects to date. It's a sneaker inventory manager and price comparison app with lots of built-in features. The backend is built wih **Google Cloud** technologies and the price comparison data is gathered by **web scraping**. The [landing page](https://copdeck.com) is built with **React, TypeScript, Next.js** and **Tailwind**. The project also included a **Google Chrome extension** and desktop app built with **Electron** (they are no longer publicly available).
+I developed a **sneaker price comparison and inventory management iOS app** for sneaker resellers that included a web scraping algorithm using **Google Cloud, back-end**, and the [CopDeck landing page](https://copdeck.com) built with **Next.js, TypeScript, Tailwind and Netlify** and a desktop app built with **Electron**.
