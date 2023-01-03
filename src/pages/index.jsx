@@ -35,7 +35,7 @@ const About = ({ title, description }) => {
 							and many others in between.
 							<br />
 							<br />
-							Recently I've been workin as an independent iOS and
+							Recently I've been working as an independent iOS and
 							web developer. Check out the{' '}
 							<Link href="/projects">
 								<a>Projects</a>
