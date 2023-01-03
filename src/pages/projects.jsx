@@ -47,34 +47,20 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 					<div className={classes.sectionTitle}>
 						<h2>iOS Development</h2>
 						<p>
-							I started iOS development in my final year in
-							college. The well-designed interfaces of iOS apps
-							got me interested and once I put together my first
-							app I was hooked. During my time as an iOS developer
-							I've <span>worked for 2 startups</span> as an iOS
-							developer, I <span>co-founded</span> my own (rather
-							short-lived) iOS game development company,{' '}
+							I have <span>5 years of experience</span> developing
+							iOS apps. I <span>worked for 2 startups</span> as an
+							iOS developer, <span>co-founded</span> an iOS game
+							development company and I{' '}
 							<span>
 								built, designed and released 9 apps from scratch
-							</span>{' '}
-							and even started my own business and{' '}
-							<span>
-								built a complex consumer product from zero
 							</span>
-							. As a developer I put a lot of emphasis on creating
-							clean, modularized code with{' '}
+							. I have experience with the following technologies:{' '}
 							<span>
-								well-structured and scalable architectures
-							</span>
-							. I've used various different technologies &
-							frameworks in my work as an app developer, some of
-							the most notable ones:{' '}
-							<span>
-								Swift, Reactive Programming (Combine, RxSwift),
-								UIKit, SwiftUI, Realm, Core Data, Unit, UI
-								tests, Circle CI, Fastlane, AWS Cognito, AWS
-								Amplify, Push Notifications, SpriteKit,
-								Firebase, MVC, MVVM, MVVM-C, Redux
+								Swift, UIKit, SwiftUI, SpriteKit, Realm, Core
+								Data, RxSwift, Combine, REST API, MVC, MVVM-C,
+								Redux, Unit, UI Testing, Fastlane, Circle CI,
+								Git, GitHub, Asynchronous programming,
+								Bitbucket, Sketch, Figma
 							</span>
 							.
 						</p>
@@ -98,7 +84,8 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 							<a href="https://hideandseek.world">
 								Hide & Seek World
 							</a>
-							.
+							, which have had <span>more than 100k users</span>{' '}
+							to date.
 						</p>
 					</div>
 					{webProjectList ? (

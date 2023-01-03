@@ -7,4 +7,4 @@ date: 'Oct 2021 - July 2022'
 link: 'https://www.sidelineswap.com'
 ---
 
-I worked as an iOS developer for the Boston-based ecommerce startup, **SidelineSwap**. It was a great learning experience, where I started as part of a 2 person team and later fully took over the development of the application. My work mostly consisted of modernizing the UI of the application, improving the software architecture of the codebase as well as refactoring and bug fixing legacy code.
+SidelineSwap is an **e-commerce store** for used sporting goods. I was hired to execute a revamp of the company’s iOS app including UX on all existing screens and new features. I **improved the software architecture** by implementing the **MVVM-C** pattern, modernized the app UI, refactored and performed bug fixes in legacy code and **rebuilt the payment checkout flow**.
