@@ -12,7 +12,7 @@ tags:
         TypeScript,
         Electron,
     ]
-date: 'Apr 2021 - Apr 2022'
+date: 'Sept 2021 - Apr 2022'
 link: 'https://copdeck.com'
 ---
 

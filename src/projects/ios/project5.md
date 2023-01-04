@@ -13,7 +13,7 @@ tags:
         React,
         TypeScript,
     ]
-date: 'Apr 2021 - Apr 2022'
+date: 'Sept 2021 - Apr 2022'
 link: 'https://www.youtube.com/watch?v=E-Os9GNkb8o'
 ---
 

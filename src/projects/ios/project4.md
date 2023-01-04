@@ -3,7 +3,7 @@ title: 'SidelineSwap'
 image: 'Sidelineswap.png'
 backgroundColor: '#FFFFFF'
 tags: [Swift, UIKit]
-date: 'Oct 2021 - July 2022'
+date: 'Oct 2021 - Aug 2022'
 link: 'https://www.sidelineswap.com'
 ---
 

@@ -3,7 +3,7 @@ title: 'LabTwin'
 image: 'LabTwin.jpg'
 backgroundColor: '#FFFFFF'
 tags: [MVVM-C, RxSwift, Realm, AWS Amplify, Circle CI, Fastlane]
-date: 'Jan 2019 - Apr 2020'
+date: 'Jan 2019 - May 2020'
 link: 'https://www.labtwin.com'
 ---
 
