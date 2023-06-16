@@ -92,7 +92,8 @@ const Portfolio = ({ webProjects, iosProjects, title, description }) => {
 								HTML, (S)CSS, Tailwind, JavaScript, TypeScript,
 								React, Next.js, Google Cloud, Firebase, Google
 								Analytics, Web Scraping, Serverless Computing,
-								Netlify, Vercel, Stripe, Google Maps API
+								Netlify, Vercel, Stripe, Google Maps API,
+								LangChain, OpenAI
 							</span>
 						</p>
 					</div>
